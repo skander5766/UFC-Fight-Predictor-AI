@@ -1,0 +1,20 @@
+# Ordinary source and documentation use Git's normal text handling.
+* text=auto
+
+# Frozen snapshots are validated using SHA-256 of the original bytes.
+# Disable line-ending conversion, content filters, and identifier expansion.
+*.csv -text -filter -ident
+data/** -text -filter -ident
+models/** -text -filter -ident
+*.pkl binary -filter -ident
+*.pickle binary -filter -ident
+*.joblib binary -filter -ident
+*.h5 binary -filter -ident
+*.hdf5 binary -filter -ident
+*.keras binary -filter -ident
+*.pt binary -filter -ident
+*.pth binary -filter -ident
+*.onnx binary -filter -ident
+
+# Production metadata also hashes this source file, currently with CRLF.
+src/prediction/build_v2_matchup_features.py -text -filter -ident

@@ -1,0 +1,6228 @@
+{
+  "population": {
+    "binary_filter": {
+      "input_rows": 8726,
+      "excluded_draws_no_contests": 157,
+      "duplicate_source_rows_removed": 22,
+      "binary_unique_source_fights": 8547
+    },
+    "excluded_methods": {
+      "DQ ": 23
+    },
+    "eligible_all_dates": 8524,
+    "all_date_distribution": {
+      "Decision": 4002,
+      "KO/TKO": 2837,
+      "Submission": 1685
+    },
+    "eligible_pre2025": 7807,
+    "excluded_2025_plus_eligible": 717,
+    "pre2025_distribution": {
+      "Decision": 3640,
+      "KO/TKO": 2605,
+      "Submission": 1562
+    }
+  },
+  "classes": [
+    "KO_TKO",
+    "SUBMISSION",
+    "DECISION"
+  ],
+  "features": {
+    "METHOD-A": [
+      "previous_wins_diff",
+      "previous_losses_diff",
+      "previous_draws_diff",
+      "previous_no_contests_diff",
+      "historical_win_rate_diff",
+      "wins_last_3_diff",
+      "wins_last_5_diff",
+      "current_win_streak_diff",
+      "current_loss_streak_diff",
+      "days_since_last_fight_diff",
+      "stats_coverage_diff",
+      "sig_str_landed_per_fight_diff",
+      "sig_str_attempted_per_fight_diff",
+      "historical_sig_str_accuracy_diff",
+      "kd_per_fight_diff",
+      "td_landed_per_fight_diff",
+      "td_attempted_per_fight_diff",
+      "historical_td_accuracy_diff",
+      "sub_att_per_fight_diff",
+      "ctrl_seconds_per_fight_diff",
+      "fights_last_365_days_diff",
+      "fights_last_730_days_diff",
+      "days_since_second_last_fight_diff",
+      "average_days_between_previous_fights_diff",
+      "layoff_over_365_days_diff",
+      "layoff_over_730_days_diff",
+      "layoff_over_1095_days_diff"
+    ],
+    "METHOD-E": [
+      "previous_wins_diff",
+      "previous_losses_diff",
+      "previous_draws_diff",
+      "previous_no_contests_diff",
+      "historical_win_rate_diff",
+      "wins_last_3_diff",
+      "wins_last_5_diff",
+      "current_win_streak_diff",
+      "current_loss_streak_diff",
+      "days_since_last_fight_diff",
+      "stats_coverage_diff",
+      "sig_str_landed_per_fight_diff",
+      "sig_str_attempted_per_fight_diff",
+      "historical_sig_str_accuracy_diff",
+      "kd_per_fight_diff",
+      "td_landed_per_fight_diff",
+      "td_attempted_per_fight_diff",
+      "historical_td_accuracy_diff",
+      "sub_att_per_fight_diff",
+      "ctrl_seconds_per_fight_diff",
+      "fights_last_365_days_diff",
+      "fights_last_730_days_diff",
+      "days_since_second_last_fight_diff",
+      "average_days_between_previous_fights_diff",
+      "layoff_over_365_days_diff",
+      "layoff_over_730_days_diff",
+      "layoff_over_1095_days_diff",
+      "prefight_elo_diff"
+    ],
+    "METHOD-D": [
+      "previous_wins_diff",
+      "previous_losses_diff",
+      "previous_draws_diff",
+      "previous_no_contests_diff",
+      "historical_win_rate_diff",
+      "wins_last_3_diff",
+      "wins_last_5_diff",
+      "current_win_streak_diff",
+      "current_loss_streak_diff",
+      "days_since_last_fight_diff",
+      "stats_coverage_diff",
+      "sig_str_landed_per_fight_diff",
+      "sig_str_attempted_per_fight_diff",
+      "historical_sig_str_accuracy_diff",
+      "kd_per_fight_diff",
+      "td_landed_per_fight_diff",
+      "td_attempted_per_fight_diff",
+      "historical_td_accuracy_diff",
+      "sub_att_per_fight_diff",
+      "ctrl_seconds_per_fight_diff",
+      "fights_last_365_days_diff",
+      "fights_last_730_days_diff",
+      "days_since_second_last_fight_diff",
+      "average_days_between_previous_fights_diff",
+      "layoff_over_365_days_diff",
+      "layoff_over_730_days_diff",
+      "layoff_over_1095_days_diff",
+      "prefight_elo_diff",
+      "significant_strikes_absorbed_per_fight_diff",
+      "takedowns_allowed_per_fight_diff",
+      "opponent_takedown_attempts_per_fight_diff",
+      "opponent_control_seconds_per_fight_diff",
+      "opponent_submission_attempts_per_fight_diff",
+      "significant_strikes_absorbed_per_minute_diff",
+      "takedown_defense_rate_diff"
+    ],
+    "METHOD-M": [
+      "previous_wins_diff",
+      "previous_losses_diff",
+      "previous_draws_diff",
+      "previous_no_contests_diff",
+      "historical_win_rate_diff",
+      "wins_last_3_diff",
+      "wins_last_5_diff",
+      "current_win_streak_diff",
+      "current_loss_streak_diff",
+      "days_since_last_fight_diff",
+      "stats_coverage_diff",
+      "sig_str_landed_per_fight_diff",
+      "sig_str_attempted_per_fight_diff",
+      "historical_sig_str_accuracy_diff",
+      "kd_per_fight_diff",
+      "td_landed_per_fight_diff",
+      "td_attempted_per_fight_diff",
+      "historical_td_accuracy_diff",
+      "sub_att_per_fight_diff",
+      "ctrl_seconds_per_fight_diff",
+      "fights_last_365_days_diff",
+      "fights_last_730_days_diff",
+      "days_since_second_last_fight_diff",
+      "average_days_between_previous_fights_diff",
+      "layoff_over_365_days_diff",
+      "layoff_over_730_days_diff",
+      "layoff_over_1095_days_diff",
+      "prefight_elo_diff",
+      "significant_strikes_absorbed_per_fight_diff",
+      "takedowns_allowed_per_fight_diff",
+      "opponent_takedown_attempts_per_fight_diff",
+      "opponent_control_seconds_per_fight_diff",
+      "opponent_submission_attempts_per_fight_diff",
+      "significant_strikes_absorbed_per_minute_diff",
+      "takedown_defense_rate_diff",
+      "previous_ko_tko_wins_diff",
+      "previous_ko_tko_losses_diff",
+      "previous_submission_wins_diff",
+      "previous_submission_losses_diff",
+      "previous_decision_wins_diff",
+      "previous_decision_losses_diff",
+      "finish_win_rate_diff",
+      "finish_loss_rate_diff",
+      "previous_early_finish_wins_diff",
+      "average_finish_round_diff",
+      "average_fight_duration_seconds_diff",
+      "average_finish_duration_seconds_diff"
+    ]
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_fights": 3933,
+      "test_fights": 913,
+      "train_dates": [
+        "1994-03-11",
+        "2016-12-30"
+      ],
+      "test_dates": [
+        "2017-01-15",
+        "2018-12-29"
+      ],
+      "training_priors": {
+        "KO_TKO": 0.34782608695652173,
+        "SUBMISSION": 0.2222222222222222,
+        "DECISION": 0.42995169082125606
+      },
+      "models": {
+        "METHOD-A": {
+          "metrics": {
+            "accuracy": 0.4665936473165389,
+            "balanced_accuracy": 0.3552663716208955,
+            "macro_f1": 0.3289227936094216,
+            "log_loss": 1.030120514193596,
+            "brier_score": 0.625460754432894,
+            "confusion_matrix": [
+              [
+                66,
+                6,
+                225
+              ],
+              [
+                17,
+                10,
+                143
+              ],
+              [
+                85,
+                11,
+                350
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.39285714285714285,
+                "recall": 0.2222222222222222,
+                "f1-score": 0.2838709677419355,
+                "support": 297.0
+              },
+              "SUBMISSION": {
+                "precision": 0.37037037037037035,
+                "recall": 0.058823529411764705,
+                "f1-score": 0.10152284263959391,
+                "support": 170.0
+              },
+              "DECISION": {
+                "precision": 0.48746518105849584,
+                "recall": 0.7847533632286996,
+                "f1-score": 0.6013745704467354,
+                "support": 446.0
+              },
+              "accuracy": 0.4665936473165389,
+              "macro avg": {
+                "precision": 0.416897564762003,
+                "recall": 0.3552663716208955,
+                "f1-score": 0.3289227936094216,
+                "support": 913.0
+              },
+              "weighted avg": {
+                "precision": 0.43488609544756135,
+                "recall": 0.4665936473165389,
+                "f1-score": 0.4050182027243481,
+                "support": 913.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 297,
+              "SUBMISSION": 170,
+              "DECISION": 446
+            },
+            "predicted_counts": {
+              "KO_TKO": 168,
+              "SUBMISSION": 27,
+              "DECISION": 718
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.34665936900421856,
+              "actual_rate": 0.3253012048192771,
+              "ece_10_bins": 0.03809883511995952,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 33,
+                  "predicted": 0.17455617998979528,
+                  "observed": 0.21212121212121213
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 193,
+                  "predicted": 0.26216336672798457,
+                  "observed": 0.29533678756476683
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 498,
+                  "predicted": 0.34568209690544505,
+                  "observed": 0.3172690763052209
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 146,
+                  "predicted": 0.4400265013847601,
+                  "observed": 0.3972602739726027
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 36,
+                  "predicted": 0.5370748189751141,
+                  "observed": 0.4166666666666667
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 7,
+                  "predicted": 0.6305533197852266,
+                  "observed": 0.2857142857142857
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.21831905681614233,
+              "actual_rate": 0.18619934282584885,
+              "ece_10_bins": 0.03386682144131641,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 30,
+                  "predicted": 0.07965126666939429,
+                  "observed": 0.1
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 334,
+                  "predicted": 0.1593361452965782,
+                  "observed": 0.11976047904191617
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 433,
+                  "predicted": 0.23669217322872824,
+                  "observed": 0.23325635103926096
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 98,
+                  "predicted": 0.33512515548965643,
+                  "observed": 0.19387755102040816
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 13,
+                  "predicted": 0.447146726809709,
+                  "observed": 0.46153846153846156
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 5,
+                  "predicted": 0.514920929889431,
+                  "observed": 0.2
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.4350215741796391,
+              "actual_rate": 0.488499452354874,
+              "ece_10_bins": 0.0580040563493339,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 12,
+                  "predicted": 0.2728129057703745,
+                  "observed": 0.5833333333333334
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 218,
+                  "predicted": 0.3678657101938934,
+                  "observed": 0.43577981651376146
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 568,
+                  "predicted": 0.4447887626725723,
+                  "observed": 0.5017605633802817
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 110,
+                  "predicted": 0.527016535748887,
+                  "observed": 0.509090909090909
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 5,
+                  "predicted": 0.6188762808197128,
+                  "observed": 0.6
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-E": {
+          "metrics": {
+            "accuracy": 0.46768893756845564,
+            "balanced_accuracy": 0.3539619057600241,
+            "macro_f1": 0.32476774101783773,
+            "log_loss": 1.0299005548993942,
+            "brier_score": 0.6252776518070795,
+            "confusion_matrix": [
+              [
+                67,
+                7,
+                223
+              ],
+              [
+                18,
+                8,
+                144
+              ],
+              [
+                82,
+                12,
+                352
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.40119760479041916,
+                "recall": 0.2255892255892256,
+                "f1-score": 0.28879310344827586,
+                "support": 297.0
+              },
+              "SUBMISSION": {
+                "precision": 0.2962962962962963,
+                "recall": 0.047058823529411764,
+                "f1-score": 0.08121827411167512,
+                "support": 170.0
+              },
+              "DECISION": {
+                "precision": 0.48956884561891517,
+                "recall": 0.7892376681614349,
+                "f1-score": 0.6042918454935622,
+                "support": 446.0
+              },
+              "accuracy": 0.46768893756845564,
+              "macro avg": {
+                "precision": 0.39568758223521017,
+                "recall": 0.3539619057600241,
+                "f1-score": 0.32476774101783773,
+                "support": 913.0
+              },
+              "weighted avg": {
+                "precision": 0.42483435283588283,
+                "recall": 0.46768893756845564,
+                "f1-score": 0.4042637693463872,
+                "support": 913.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 297,
+              "SUBMISSION": 170,
+              "DECISION": 446
+            },
+            "predicted_counts": {
+              "KO_TKO": 167,
+              "SUBMISSION": 27,
+              "DECISION": 719
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.34649401174514793,
+              "actual_rate": 0.3253012048192771,
+              "ece_10_bins": 0.0394880583317145,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 33,
+                  "predicted": 0.17461742121977664,
+                  "observed": 0.24242424242424243
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 198,
+                  "predicted": 0.2620497112776755,
+                  "observed": 0.29292929292929293
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 496,
+                  "predicted": 0.3464201542055286,
+                  "observed": 0.3225806451612903
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 143,
+                  "predicted": 0.44176213416282173,
+                  "observed": 0.3776223776223776
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 37,
+                  "predicted": 0.5376869265282472,
+                  "observed": 0.40540540540540543
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 6,
+                  "predicted": 0.6350028395528146,
+                  "observed": 0.3333333333333333
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.21864801261961164,
+              "actual_rate": 0.18619934282584885,
+              "ece_10_bins": 0.032448669793762826,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 32,
+                  "predicted": 0.080000397219425,
+                  "observed": 0.0625
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 333,
+                  "predicted": 0.15895684982298236,
+                  "observed": 0.12612612612612611
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 436,
+                  "predicted": 0.23844891737769852,
+                  "observed": 0.23394495412844038
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 93,
+                  "predicted": 0.3374514641677128,
+                  "observed": 0.1827956989247312
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 14,
+                  "predicted": 0.44315571894652467,
+                  "observed": 0.42857142857142855
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 5,
+                  "predicted": 0.5164195220211095,
+                  "observed": 0.2
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.43485797563524037,
+              "actual_rate": 0.488499452354874,
+              "ece_10_bins": 0.05608422633871347,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 11,
+                  "predicted": 0.26940285272134495,
+                  "observed": 0.5454545454545454
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 219,
+                  "predicted": 0.36744531916063067,
+                  "observed": 0.4429223744292237
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 572,
+                  "predicted": 0.4448885669191462,
+                  "observed": 0.4982517482517482
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 106,
+                  "predicted": 0.5284431041297685,
+                  "observed": 0.5188679245283019
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 5,
+                  "predicted": 0.6200292326708972,
+                  "observed": 0.6
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-D": {
+          "metrics": {
+            "accuracy": 0.4665936473165389,
+            "balanced_accuracy": 0.3606927743391297,
+            "macro_f1": 0.34039129324527045,
+            "log_loss": 1.0242423725995677,
+            "brier_score": 0.6216047442223152,
+            "confusion_matrix": [
+              [
+                74,
+                7,
+                216
+              ],
+              [
+                22,
+                12,
+                136
+              ],
+              [
+                88,
+                18,
+                340
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.40217391304347827,
+                "recall": 0.24915824915824916,
+                "f1-score": 0.3076923076923077,
+                "support": 297.0
+              },
+              "SUBMISSION": {
+                "precision": 0.32432432432432434,
+                "recall": 0.07058823529411765,
+                "f1-score": 0.11594202898550725,
+                "support": 170.0
+              },
+              "DECISION": {
+                "precision": 0.4913294797687861,
+                "recall": 0.7623318385650224,
+                "f1-score": 0.5975395430579965,
+                "support": 446.0
+              },
+              "accuracy": 0.4665936473165389,
+              "macro avg": {
+                "precision": 0.40594257237886294,
+                "recall": 0.3606927743391297,
+                "f1-score": 0.34039129324527045,
+                "support": 913.0
+              },
+              "weighted avg": {
+                "precision": 0.43123081630441046,
+                "recall": 0.4665936473165389,
+                "f1-score": 0.41357874755314133,
+                "support": 913.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 297,
+              "SUBMISSION": 170,
+              "DECISION": 446
+            },
+            "predicted_counts": {
+              "KO_TKO": 184,
+              "SUBMISSION": 37,
+              "DECISION": 692
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.3463974586887586,
+              "actual_rate": 0.3253012048192771,
+              "ece_10_bins": 0.04080578963013859,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 38,
+                  "predicted": 0.1717034817575615,
+                  "observed": 0.2631578947368421
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 208,
+                  "predicted": 0.25710511835804184,
+                  "observed": 0.28365384615384615
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 464,
+                  "predicted": 0.34811319794270856,
+                  "observed": 0.31896551724137934
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 150,
+                  "predicted": 0.43895650409251535,
+                  "observed": 0.36666666666666664
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 49,
+                  "predicted": 0.5361124636683133,
+                  "observed": 0.4897959183673469
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 4,
+                  "predicted": 0.6551931696337883,
+                  "observed": 0.25
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.2179753690498998,
+              "actual_rate": 0.18619934282584885,
+              "ece_10_bins": 0.03280383480487462,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 48,
+                  "predicted": 0.07826901223043313,
+                  "observed": 0.08333333333333333
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 335,
+                  "predicted": 0.1578136593291262,
+                  "observed": 0.12238805970149254
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 399,
+                  "predicted": 0.23822493627514194,
+                  "observed": 0.22055137844611528
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 105,
+                  "predicted": 0.3327205535596981,
+                  "observed": 0.26666666666666666
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 18,
+                  "predicted": 0.4456578780638653,
+                  "observed": 0.2777777777777778
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 7,
+                  "predicted": 0.539127542256171,
+                  "observed": 0.5714285714285714
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 1,
+                  "predicted": 0.6038811817477261,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.4356271722613416,
+              "actual_rate": 0.488499452354874,
+              "ece_10_bins": 0.05902814923909475,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 1,
+                  "predicted": 0.19989810981945538,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 31,
+                  "predicted": 0.2699972018532083,
+                  "observed": 0.5806451612903226
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 238,
+                  "predicted": 0.367357455211601,
+                  "observed": 0.4579831932773109
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 499,
+                  "predicted": 0.4459492924612692,
+                  "observed": 0.46893787575150303
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 125,
+                  "predicted": 0.537184255077649,
+                  "observed": 0.6
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 17,
+                  "predicted": 0.624132715007633,
+                  "observed": 0.47058823529411764
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 2,
+                  "predicted": 0.7198687944828803,
+                  "observed": 1.0
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-M": {
+          "metrics": {
+            "accuracy": 0.46768893756845564,
+            "balanced_accuracy": 0.38497901432922976,
+            "macro_f1": 0.3824156990335094,
+            "log_loss": 1.016829894710528,
+            "brier_score": 0.6187155754815805,
+            "confusion_matrix": [
+              [
+                85,
+                22,
+                190
+              ],
+              [
+                19,
+                28,
+                123
+              ],
+              [
+                102,
+                30,
+                314
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.41262135922330095,
+                "recall": 0.28619528619528617,
+                "f1-score": 0.3379721669980119,
+                "support": 297.0
+              },
+              "SUBMISSION": {
+                "precision": 0.35,
+                "recall": 0.16470588235294117,
+                "f1-score": 0.224,
+                "support": 170.0
+              },
+              "DECISION": {
+                "precision": 0.5007974481658692,
+                "recall": 0.7040358744394619,
+                "f1-score": 0.5852749301025163,
+                "support": 446.0
+              },
+              "accuracy": 0.46768893756845564,
+              "macro avg": {
+                "precision": 0.4211396024630567,
+                "recall": 0.38497901432922976,
+                "f1-score": 0.3824156990335094,
+                "support": 913.0
+              },
+              "weighted avg": {
+                "precision": 0.44403527444830015,
+                "recall": 0.46768893756845564,
+                "f1-score": 0.4375578887449418,
+                "support": 913.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 297,
+              "SUBMISSION": 170,
+              "DECISION": 446
+            },
+            "predicted_counts": {
+              "KO_TKO": 206,
+              "SUBMISSION": 80,
+              "DECISION": 627
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.347294783638428,
+              "actual_rate": 0.3253012048192771,
+              "ece_10_bins": 0.046012199022305314,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1,
+                  "predicted": 0.07360827249406426,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 52,
+                  "predicted": 0.16961971818914767,
+                  "observed": 0.25
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 208,
+                  "predicted": 0.2558426660164631,
+                  "observed": 0.28846153846153844
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 440,
+                  "predicted": 0.35020409473627856,
+                  "observed": 0.31136363636363634
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 146,
+                  "predicted": 0.44139525761240245,
+                  "observed": 0.3904109589041096
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 57,
+                  "predicted": 0.5352257056070341,
+                  "observed": 0.49122807017543857
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 8,
+                  "predicted": 0.6438001748045217,
+                  "observed": 0.25
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 1,
+                  "predicted": 0.7792533987202444,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.22052854129299868,
+              "actual_rate": 0.18619934282584885,
+              "ece_10_bins": 0.034948619934527164,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 83,
+                  "predicted": 0.0725465421964689,
+                  "observed": 0.060240963855421686
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 337,
+                  "predicted": 0.15652370309991273,
+                  "observed": 0.12462908011869436
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 326,
+                  "predicted": 0.23697199879607303,
+                  "observed": 0.2147239263803681
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 112,
+                  "predicted": 0.3392321008783495,
+                  "observed": 0.25892857142857145
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 31,
+                  "predicted": 0.43584921104604085,
+                  "observed": 0.3870967741935484
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 15,
+                  "predicted": 0.5398187136710553,
+                  "observed": 0.4
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 9,
+                  "predicted": 0.6352482333491386,
+                  "observed": 0.6666666666666666
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.43217667506857327,
+              "actual_rate": 0.488499452354874,
+              "ece_10_bins": 0.06314463017985793,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 7,
+                  "predicted": 0.16775392689440818,
+                  "observed": 0.42857142857142855
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 61,
+                  "predicted": 0.25971588282607416,
+                  "observed": 0.3442622950819672
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 242,
+                  "predicted": 0.3597423276858071,
+                  "observed": 0.5
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 408,
+                  "predicted": 0.44703073247814185,
+                  "observed": 0.4803921568627451
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 158,
+                  "predicted": 0.5356990293877439,
+                  "observed": 0.5253164556962026
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 35,
+                  "predicted": 0.6272272449301638,
+                  "observed": 0.6
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 2,
+                  "predicted": 0.7603878150447896,
+                  "observed": 0.5
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "majority": {
+          "metrics": {
+            "accuracy": 0.488499452354874,
+            "balanced_accuracy": 0.3333333333333333,
+            "macro_f1": 0.21878832474858964,
+            "log_loss": 18.43634844766452,
+            "brier_score": 1.023001095290252,
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                297
+              ],
+              [
+                0,
+                0,
+                170
+              ],
+              [
+                0,
+                0,
+                446
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 297.0
+              },
+              "SUBMISSION": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 170.0
+              },
+              "DECISION": {
+                "precision": 0.488499452354874,
+                "recall": 1.0,
+                "f1-score": 0.6563649742457689,
+                "support": 446.0
+              },
+              "accuracy": 0.488499452354874,
+              "macro avg": {
+                "precision": 0.162833150784958,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.21878832474858964,
+                "support": 913.0
+              },
+              "weighted avg": {
+                "precision": 0.23863171495101185,
+                "recall": 0.488499452354874,
+                "f1-score": 0.32063393046397914,
+                "support": 913.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 297,
+              "SUBMISSION": 170,
+              "DECISION": 446
+            },
+            "predicted_counts": {
+              "KO_TKO": 0,
+              "SUBMISSION": 0,
+              "DECISION": 913
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.0,
+              "actual_rate": 0.3253012048192771,
+              "ece_10_bins": 0.3253012048192771,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 913,
+                  "predicted": 0.0,
+                  "observed": 0.3253012048192771
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.0,
+              "actual_rate": 0.18619934282584885,
+              "ece_10_bins": 0.18619934282584885,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 913,
+                  "predicted": 0.0,
+                  "observed": 0.18619934282584885
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 1.0,
+              "actual_rate": 0.488499452354874,
+              "ece_10_bins": 0.511500547645126,
+              "bins": [
+                {
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "count": 913,
+                  "predicted": 1.0,
+                  "observed": 0.488499452354874
+                }
+              ]
+            }
+          }
+        },
+        "training_prior": {
+          "metrics": {
+            "accuracy": 0.488499452354874,
+            "balanced_accuracy": 0.3333333333333333,
+            "macro_f1": 0.21878832474858964,
+            "log_loss": 1.0359272317632344,
+            "brier_score": 0.6261100744592367,
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                297
+              ],
+              [
+                0,
+                0,
+                170
+              ],
+              [
+                0,
+                0,
+                446
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 297.0
+              },
+              "SUBMISSION": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 170.0
+              },
+              "DECISION": {
+                "precision": 0.488499452354874,
+                "recall": 1.0,
+                "f1-score": 0.6563649742457689,
+                "support": 446.0
+              },
+              "accuracy": 0.488499452354874,
+              "macro avg": {
+                "precision": 0.162833150784958,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.21878832474858964,
+                "support": 913.0
+              },
+              "weighted avg": {
+                "precision": 0.23863171495101185,
+                "recall": 0.488499452354874,
+                "f1-score": 0.32063393046397914,
+                "support": 913.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 297,
+              "SUBMISSION": 170,
+              "DECISION": 446
+            },
+            "predicted_counts": {
+              "KO_TKO": 0,
+              "SUBMISSION": 0,
+              "DECISION": 913
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.3478260869565216,
+              "actual_rate": 0.3253012048192771,
+              "ece_10_bins": 0.022524882137244517,
+              "bins": [
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 913,
+                  "predicted": 0.3478260869565216,
+                  "observed": 0.3253012048192771
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.22222222222222232,
+              "actual_rate": 0.18619934282584885,
+              "ece_10_bins": 0.03602287939637347,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 913,
+                  "predicted": 0.22222222222222232,
+                  "observed": 0.18619934282584885
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.4299516908212561,
+              "actual_rate": 0.488499452354874,
+              "ece_10_bins": 0.058547761533617904,
+              "bins": [
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 913,
+                  "predicted": 0.4299516908212561,
+                  "observed": 0.488499452354874
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_fights": 4846,
+      "test_fights": 947,
+      "train_dates": [
+        "1994-03-11",
+        "2018-12-29"
+      ],
+      "test_dates": [
+        "2019-01-19",
+        "2020-12-19"
+      ],
+      "training_priors": {
+        "KO_TKO": 0.3435823359471729,
+        "SUBMISSION": 0.21543541064795707,
+        "DECISION": 0.44098225340487
+      },
+      "models": {
+        "METHOD-A": {
+          "metrics": {
+            "accuracy": 0.49947201689545934,
+            "balanced_accuracy": 0.3490730249423492,
+            "macro_f1": 0.3113063072496505,
+            "log_loss": 1.0056182596085859,
+            "brier_score": 0.608301063115355,
+            "confusion_matrix": [
+              [
+                51,
+                8,
+                233
+              ],
+              [
+                14,
+                4,
+                144
+              ],
+              [
+                66,
+                9,
+                418
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.3893129770992366,
+                "recall": 0.17465753424657535,
+                "f1-score": 0.24113475177304963,
+                "support": 292.0
+              },
+              "SUBMISSION": {
+                "precision": 0.19047619047619047,
+                "recall": 0.024691358024691357,
+                "f1-score": 0.04371584699453552,
+                "support": 162.0
+              },
+              "DECISION": {
+                "precision": 0.5257861635220126,
+                "recall": 0.847870182555781,
+                "f1-score": 0.6490683229813664,
+                "support": 493.0
+              },
+              "accuracy": 0.49947201689545934,
+              "macro avg": {
+                "precision": 0.3685251103658132,
+                "recall": 0.3490730249423492,
+                "f1-score": 0.3113063072496505,
+                "support": 947.0
+              },
+              "weighted avg": {
+                "precision": 0.42634541793714054,
+                "recall": 0.49947201689545934,
+                "f1-score": 0.41972967049699983,
+                "support": 947.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 292,
+              "SUBMISSION": 162,
+              "DECISION": 493
+            },
+            "predicted_counts": {
+              "KO_TKO": 131,
+              "SUBMISSION": 21,
+              "DECISION": 795
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.340509670729189,
+              "actual_rate": 0.30834213305174235,
+              "ece_10_bins": 0.03542566043723155,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1,
+                  "predicted": 0.08960976253973643,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 23,
+                  "predicted": 0.1764275755380234,
+                  "observed": 0.08695652173913043
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 234,
+                  "predicted": 0.2629610442930505,
+                  "observed": 0.2222222222222222
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 518,
+                  "predicted": 0.34679547840831515,
+                  "observed": 0.3359073359073359
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 147,
+                  "predicted": 0.43581725427793183,
+                  "observed": 0.3401360544217687
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 23,
+                  "predicted": 0.5416208205757327,
+                  "observed": 0.6086956521739131
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 1,
+                  "predicted": 0.6198567484488011,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.2180879900814547,
+              "actual_rate": 0.17106652587117213,
+              "ece_10_bins": 0.04702146421028258,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 28,
+                  "predicted": 0.08258836097392389,
+                  "observed": 0.07142857142857142
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 355,
+                  "predicted": 0.16505889344308908,
+                  "observed": 0.12112676056338029
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 460,
+                  "predicted": 0.23577693916872888,
+                  "observed": 0.18695652173913044
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 86,
+                  "predicted": 0.33513697342198456,
+                  "observed": 0.3023255813953488
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 14,
+                  "predicted": 0.43657246100875496,
+                  "observed": 0.35714285714285715
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 3,
+                  "predicted": 0.5304766973858558,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 1,
+                  "predicted": 0.6383290493850241,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.4414023391893563,
+              "actual_rate": 0.5205913410770855,
+              "ece_10_bins": 0.08579428219310711,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 2,
+                  "predicted": 0.23589038522831512,
+                  "observed": 1.0
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 176,
+                  "predicted": 0.37074824225190317,
+                  "observed": 0.4431818181818182
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 670,
+                  "predicted": 0.44671049901036314,
+                  "observed": 0.5343283582089552
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 94,
+                  "predicted": 0.5304352047232883,
+                  "observed": 0.5851063829787234
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 5,
+                  "predicted": 0.6255200449192893,
+                  "observed": 0.0
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-E": {
+          "metrics": {
+            "accuracy": 0.49736008447729674,
+            "balanced_accuracy": 0.3477207598984006,
+            "macro_f1": 0.31024884373167705,
+            "log_loss": 1.006290207346253,
+            "brier_score": 0.6086131970205602,
+            "confusion_matrix": [
+              [
+                51,
+                8,
+                233
+              ],
+              [
+                13,
+                4,
+                145
+              ],
+              [
+                68,
+                9,
+                416
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.38636363636363635,
+                "recall": 0.17465753424657535,
+                "f1-score": 0.24056603773584906,
+                "support": 292.0
+              },
+              "SUBMISSION": {
+                "precision": 0.19047619047619047,
+                "recall": 0.024691358024691357,
+                "f1-score": 0.04371584699453552,
+                "support": 162.0
+              },
+              "DECISION": {
+                "precision": 0.5239294710327456,
+                "recall": 0.8438133874239351,
+                "f1-score": 0.6464646464646465,
+                "support": 493.0
+              },
+              "accuracy": 0.49736008447729674,
+              "macro avg": {
+                "precision": 0.3669230992908575,
+                "recall": 0.3477207598984006,
+                "f1-score": 0.31024884373167705,
+                "support": 947.0
+              },
+              "weighted avg": {
+                "precision": 0.42446943389067393,
+                "recall": 0.49736008447729674,
+                "f1-score": 0.41819886054810285,
+                "support": 947.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 292,
+              "SUBMISSION": 162,
+              "DECISION": 493
+            },
+            "predicted_counts": {
+              "KO_TKO": 132,
+              "SUBMISSION": 21,
+              "DECISION": 794
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.34038306831281334,
+              "actual_rate": 0.30834213305174235,
+              "ece_10_bins": 0.03527767719390793,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1,
+                  "predicted": 0.08987330890252627,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 23,
+                  "predicted": 0.17699823283508317,
+                  "observed": 0.08695652173913043
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 234,
+                  "predicted": 0.2629335947006321,
+                  "observed": 0.24786324786324787
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 517,
+                  "predicted": 0.34665106088708886,
+                  "observed": 0.32688588007736946
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 150,
+                  "predicted": 0.4356275645251522,
+                  "observed": 0.3333333333333333
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 21,
+                  "predicted": 0.546066794990558,
+                  "observed": 0.6190476190476191
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 1,
+                  "predicted": 0.625336015977414,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.2181768669890189,
+              "actual_rate": 0.17106652587117213,
+              "ece_10_bins": 0.04711034111784679,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 27,
+                  "predicted": 0.08178371211317306,
+                  "observed": 0.07407407407407407
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 360,
+                  "predicted": 0.16491412625553778,
+                  "observed": 0.125
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 451,
+                  "predicted": 0.23548501800011878,
+                  "observed": 0.188470066518847
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 91,
+                  "predicted": 0.3344251710927292,
+                  "observed": 0.27472527472527475
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 14,
+                  "predicted": 0.440081936630709,
+                  "observed": 0.35714285714285715
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 3,
+                  "predicted": 0.5313108242753922,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 1,
+                  "predicted": 0.6447340864036069,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.4414400646981677,
+              "actual_rate": 0.5205913410770855,
+              "ece_10_bins": 0.08493408372633167,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 3,
+                  "predicted": 0.25596259767598634,
+                  "observed": 1.0
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 174,
+                  "predicted": 0.37080023476451157,
+                  "observed": 0.4367816091954023
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 671,
+                  "predicted": 0.4466911505165118,
+                  "observed": 0.5320417287630402
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 93,
+                  "predicted": 0.5299859285110965,
+                  "observed": 0.6021505376344086
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 6,
+                  "predicted": 0.6230265465000758,
+                  "observed": 0.16666666666666666
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-D": {
+          "metrics": {
+            "accuracy": 0.5068637803590285,
+            "balanced_accuracy": 0.3676650970283901,
+            "macro_f1": 0.34495972560267085,
+            "log_loss": 1.0048030301154598,
+            "brier_score": 0.6090275857024234,
+            "confusion_matrix": [
+              [
+                60,
+                11,
+                221
+              ],
+              [
+                21,
+                11,
+                130
+              ],
+              [
+                69,
+                15,
+                409
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.4,
+                "recall": 0.2054794520547945,
+                "f1-score": 0.27149321266968324,
+                "support": 292.0
+              },
+              "SUBMISSION": {
+                "precision": 0.2972972972972973,
+                "recall": 0.06790123456790123,
+                "f1-score": 0.11055276381909548,
+                "support": 162.0
+              },
+              "DECISION": {
+                "precision": 0.5381578947368421,
+                "recall": 0.8296146044624746,
+                "f1-score": 0.6528332003192339,
+                "support": 493.0
+              },
+              "accuracy": 0.5068637803590285,
+              "macro avg": {
+                "precision": 0.4118183973447131,
+                "recall": 0.3676650970283901,
+                "f1-score": 0.34495972560267085,
+                "support": 947.0
+              },
+              "weighted avg": {
+                "precision": 0.45435480915250825,
+                "recall": 0.5068637803590285,
+                "f1-score": 0.4424839847894649,
+                "support": 947.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 292,
+              "SUBMISSION": 162,
+              "DECISION": 493
+            },
+            "predicted_counts": {
+              "KO_TKO": 150,
+              "SUBMISSION": 37,
+              "DECISION": 760
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.3423718800494054,
+              "actual_rate": 0.30834213305174235,
+              "ece_10_bins": 0.03402974699766306,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1,
+                  "predicted": 0.09035789626867057,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 33,
+                  "predicted": 0.1739812348630741,
+                  "observed": 0.15151515151515152
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 236,
+                  "predicted": 0.26020562745523274,
+                  "observed": 0.2542372881355932
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 490,
+                  "predicted": 0.34796426618879256,
+                  "observed": 0.32040816326530613
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 145,
+                  "predicted": 0.43756624671585165,
+                  "observed": 0.3586206896551724
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 36,
+                  "predicted": 0.5329150803543626,
+                  "observed": 0.5
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 5,
+                  "predicted": 0.6302337713056294,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 1,
+                  "predicted": 0.7001957250098368,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.21598287788193157,
+              "actual_rate": 0.17106652587117213,
+              "ece_10_bins": 0.044916352010759455,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 42,
+                  "predicted": 0.07696425761980606,
+                  "observed": 0.07142857142857142
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 369,
+                  "predicted": 0.1598603842311169,
+                  "observed": 0.12195121951219512
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 419,
+                  "predicted": 0.23712869097974357,
+                  "observed": 0.1957040572792363
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 88,
+                  "predicted": 0.3396686262851263,
+                  "observed": 0.2727272727272727
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 26,
+                  "predicted": 0.4360819691700788,
+                  "observed": 0.3076923076923077
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 3,
+                  "predicted": 0.5763043069498316,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.441645242068663,
+              "actual_rate": 0.5205913410770855,
+              "ece_10_bins": 0.08287607265360059,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 18,
+                  "predicted": 0.27554540304283587,
+                  "observed": 0.3333333333333333
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 213,
+                  "predicted": 0.37088554499894016,
+                  "observed": 0.4507042253521127
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 580,
+                  "predicted": 0.44916938888288566,
+                  "observed": 0.5396551724137931
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 127,
+                  "predicted": 0.5346497466646701,
+                  "observed": 0.5826771653543307
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 7,
+                  "predicted": 0.6327029547500872,
+                  "observed": 0.42857142857142855
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 2,
+                  "predicted": 0.7159609188706073,
+                  "observed": 0.5
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-M": {
+          "metrics": {
+            "accuracy": 0.5026399155227033,
+            "balanced_accuracy": 0.38113203199834605,
+            "macro_f1": 0.37139764623139193,
+            "log_loss": 1.0003152807723081,
+            "brier_score": 0.6077704887607773,
+            "confusion_matrix": [
+              [
+                71,
+                22,
+                199
+              ],
+              [
+                23,
+                19,
+                120
+              ],
+              [
+                77,
+                30,
+                386
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.4152046783625731,
+                "recall": 0.24315068493150685,
+                "f1-score": 0.30669546436285094,
+                "support": 292.0
+              },
+              "SUBMISSION": {
+                "precision": 0.2676056338028169,
+                "recall": 0.11728395061728394,
+                "f1-score": 0.1630901287553648,
+                "support": 162.0
+              },
+              "DECISION": {
+                "precision": 0.5475177304964539,
+                "recall": 0.7829614604462475,
+                "f1-score": 0.6444073455759599,
+                "support": 493.0
+              },
+              "accuracy": 0.5026399155227033,
+              "macro avg": {
+                "precision": 0.41010934755394796,
+                "recall": 0.38113203199834605,
+                "f1-score": 0.37139764623139193,
+                "support": 947.0
+              },
+              "weighted avg": {
+                "precision": 0.4588364518402106,
+                "recall": 0.5026399155227033,
+                "f1-score": 0.45793927964231235,
+                "support": 947.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 292,
+              "SUBMISSION": 162,
+              "DECISION": 493
+            },
+            "predicted_counts": {
+              "KO_TKO": 171,
+              "SUBMISSION": 71,
+              "DECISION": 705
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.34057141354147064,
+              "actual_rate": 0.30834213305174235,
+              "ece_10_bins": 0.0338158739771878,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 4,
+                  "predicted": 0.08219054824783456,
+                  "observed": 0.25
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 57,
+                  "predicted": 0.17403483843327394,
+                  "observed": 0.17543859649122806
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 242,
+                  "predicted": 0.2616931836925461,
+                  "observed": 0.25206611570247933
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 437,
+                  "predicted": 0.3481319707967035,
+                  "observed": 0.3157894736842105
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 161,
+                  "predicted": 0.44209511655822664,
+                  "observed": 0.39751552795031053
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 38,
+                  "predicted": 0.5368671497380434,
+                  "observed": 0.47368421052631576
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 6,
+                  "predicted": 0.6348689568355844,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 2,
+                  "predicted": 0.7107398756977766,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.21885822198650123,
+              "actual_rate": 0.17106652587117213,
+              "ece_10_bins": 0.04829488190556031,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 97,
+                  "predicted": 0.07467400204058014,
+                  "observed": 0.07216494845360824
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 345,
+                  "predicted": 0.1587036199953412,
+                  "observed": 0.1246376811594203
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 338,
+                  "predicted": 0.23797619052212882,
+                  "observed": 0.20118343195266272
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 114,
+                  "predicted": 0.3405038578645885,
+                  "observed": 0.24561403508771928
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 35,
+                  "predicted": 0.43818612479386954,
+                  "observed": 0.2571428571428571
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 11,
+                  "predicted": 0.5323259442098602,
+                  "observed": 0.2727272727272727
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 5,
+                  "predicted": 0.6503546701029573,
+                  "observed": 0.6
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 1,
+                  "predicted": 0.7617415283255388,
+                  "observed": 1.0
+                },
+                {
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "count": 1,
+                  "predicted": 0.8036022989108563,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.440570364472028,
+              "actual_rate": 0.5205913410770855,
+              "ece_10_bins": 0.083139873521395,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 4,
+                  "predicted": 0.142789374896026,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 41,
+                  "predicted": 0.2700012444251635,
+                  "observed": 0.4634146341463415
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 224,
+                  "predicted": 0.3622376555540156,
+                  "observed": 0.45089285714285715
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 485,
+                  "predicted": 0.44914284464247767,
+                  "observed": 0.5381443298969072
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 168,
+                  "predicted": 0.5378391601951191,
+                  "observed": 0.5654761904761905
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 21,
+                  "predicted": 0.6352758588196132,
+                  "observed": 0.7142857142857143
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 4,
+                  "predicted": 0.7264100475754314,
+                  "observed": 0.5
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "majority": {
+          "metrics": {
+            "accuracy": 0.5205913410770855,
+            "balanced_accuracy": 0.3333333333333333,
+            "macro_f1": 0.22824074074074074,
+            "log_loss": 17.279639533959013,
+            "brier_score": 0.9588173178458289,
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                292
+              ],
+              [
+                0,
+                0,
+                162
+              ],
+              [
+                0,
+                0,
+                493
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 292.0
+              },
+              "SUBMISSION": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 162.0
+              },
+              "DECISION": {
+                "precision": 0.5205913410770855,
+                "recall": 1.0,
+                "f1-score": 0.6847222222222222,
+                "support": 493.0
+              },
+              "accuracy": 0.5205913410770855,
+              "macro avg": {
+                "precision": 0.17353044702569517,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.22824074074074074,
+                "support": 947.0
+              },
+              "weighted avg": {
+                "precision": 0.27101534440443836,
+                "recall": 0.5205913410770855,
+                "f1-score": 0.35646045993194886,
+                "support": 947.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 292,
+              "SUBMISSION": 162,
+              "DECISION": 493
+            },
+            "predicted_counts": {
+              "KO_TKO": 0,
+              "SUBMISSION": 0,
+              "DECISION": 947
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.0,
+              "actual_rate": 0.30834213305174235,
+              "ece_10_bins": 0.30834213305174235,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 947,
+                  "predicted": 0.0,
+                  "observed": 0.30834213305174235
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.0,
+              "actual_rate": 0.17106652587117213,
+              "ece_10_bins": 0.17106652587117213,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 947,
+                  "predicted": 0.0,
+                  "observed": 0.17106652587117213
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 1.0,
+              "actual_rate": 0.5205913410770855,
+              "ece_10_bins": 0.4794086589229145,
+              "bins": [
+                {
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "count": 947,
+                  "predicted": 1.0,
+                  "observed": 0.5205913410770855
+                }
+              ]
+            }
+          }
+        },
+        "training_prior": {
+          "metrics": {
+            "accuracy": 0.5205913410770855,
+            "balanced_accuracy": 0.3333333333333333,
+            "macro_f1": 0.22824074074074074,
+            "log_loss": 1.0182484052148182,
+            "brier_score": 0.61419410498348,
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                292
+              ],
+              [
+                0,
+                0,
+                162
+              ],
+              [
+                0,
+                0,
+                493
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 292.0
+              },
+              "SUBMISSION": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 162.0
+              },
+              "DECISION": {
+                "precision": 0.5205913410770855,
+                "recall": 1.0,
+                "f1-score": 0.6847222222222222,
+                "support": 493.0
+              },
+              "accuracy": 0.5205913410770855,
+              "macro avg": {
+                "precision": 0.17353044702569517,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.22824074074074074,
+                "support": 947.0
+              },
+              "weighted avg": {
+                "precision": 0.27101534440443836,
+                "recall": 0.5205913410770855,
+                "f1-score": 0.35646045993194886,
+                "support": 947.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 292,
+              "SUBMISSION": 162,
+              "DECISION": 493
+            },
+            "predicted_counts": {
+              "KO_TKO": 0,
+              "SUBMISSION": 0,
+              "DECISION": 947
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.34358233594717286,
+              "actual_rate": 0.30834213305174235,
+              "ece_10_bins": 0.035240202895430506,
+              "bins": [
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 947,
+                  "predicted": 0.34358233594717286,
+                  "observed": 0.30834213305174235
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.2154354106479571,
+              "actual_rate": 0.17106652587117213,
+              "ece_10_bins": 0.04436888477678497,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 947,
+                  "predicted": 0.2154354106479571,
+                  "observed": 0.17106652587117213
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.44098225340487013,
+              "actual_rate": 0.5205913410770855,
+              "ece_10_bins": 0.07960908767221536,
+              "bins": [
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 947,
+                  "predicted": 0.44098225340487013,
+                  "observed": 0.5205913410770855
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_fights": 5793,
+      "test_fights": 1000,
+      "train_dates": [
+        "1994-03-11",
+        "2020-12-19"
+      ],
+      "test_dates": [
+        "2021-01-16",
+        "2022-12-17"
+      ],
+      "training_priors": {
+        "KO_TKO": 0.33782150871741756,
+        "SUBMISSION": 0.20818228896944588,
+        "DECISION": 0.45399620231313653
+      },
+      "models": {
+        "METHOD-A": {
+          "metrics": {
+            "accuracy": 0.485,
+            "balanced_accuracy": 0.35738158995480945,
+            "macro_f1": 0.3115207589292781,
+            "log_loss": 1.013147343422148,
+            "brier_score": 0.6151857791557598,
+            "confusion_matrix": [
+              [
+                44,
+                3,
+                295
+              ],
+              [
+                21,
+                10,
+                140
+              ],
+              [
+                47,
+                9,
+                431
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.39285714285714285,
+                "recall": 0.1286549707602339,
+                "f1-score": 0.19383259911894274,
+                "support": 342.0
+              },
+              "SUBMISSION": {
+                "precision": 0.45454545454545453,
+                "recall": 0.05847953216374269,
+                "f1-score": 0.10362694300518134,
+                "support": 171.0
+              },
+              "DECISION": {
+                "precision": 0.4976905311778291,
+                "recall": 0.8850102669404517,
+                "f1-score": 0.6371027346637103,
+                "support": 487.0
+              },
+              "accuracy": 0.485,
+              "macro avg": {
+                "precision": 0.44836437619347547,
+                "recall": 0.35738158995480945,
+                "f1-score": 0.3115207589292781,
+                "support": 1000.0
+              },
+              "weighted avg": {
+                "precision": 0.4544597042680183,
+                "recall": 0.485,
+                "f1-score": 0.39427998793379126,
+                "support": 1000.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 342,
+              "SUBMISSION": 171,
+              "DECISION": 487
+            },
+            "predicted_counts": {
+              "KO_TKO": 112,
+              "SUBMISSION": 22,
+              "DECISION": 866
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.33710911419579453,
+              "actual_rate": 0.342,
+              "ece_10_bins": 0.031823349005095446,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1,
+                  "predicted": 0.08769922875953065,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 32,
+                  "predicted": 0.1713966370940762,
+                  "observed": 0.28125
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 250,
+                  "predicted": 0.2594146985889773,
+                  "observed": 0.276
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 540,
+                  "predicted": 0.3468602140020274,
+                  "observed": 0.36666666666666664
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 156,
+                  "predicted": 0.43639908888643053,
+                  "observed": 0.36538461538461536
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 18,
+                  "predicted": 0.526400054487142,
+                  "observed": 0.4444444444444444
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 3,
+                  "predicted": 0.608357841544584,
+                  "observed": 0.3333333333333333
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.20827486740934922,
+              "actual_rate": 0.171,
+              "ece_10_bins": 0.03727486740934919,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 38,
+                  "predicted": 0.08232933491111882,
+                  "observed": 0.05263157894736842
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 443,
+                  "predicted": 0.1600087714811493,
+                  "observed": 0.1309255079006772
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 416,
+                  "predicted": 0.2340032530512518,
+                  "observed": 0.19471153846153846
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 84,
+                  "predicted": 0.3340390691286344,
+                  "observed": 0.2857142857142857
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 14,
+                  "predicted": 0.42958400437486693,
+                  "observed": 0.35714285714285715
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 4,
+                  "predicted": 0.512557066265998,
+                  "observed": 0.25
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 1,
+                  "predicted": 0.7934275141393631,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.45461601839485627,
+              "actual_rate": 0.487,
+              "ece_10_bins": 0.04906179606292504,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 1,
+                  "predicted": 0.11887325710110626,
+                  "observed": 1.0
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 3,
+                  "predicted": 0.2819886387329806,
+                  "observed": 0.6666666666666666
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 104,
+                  "predicted": 0.3711122763170721,
+                  "observed": 0.3557692307692308
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 742,
+                  "predicted": 0.45190333152650347,
+                  "observed": 0.5040431266846361
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 145,
+                  "predicted": 0.5288620478566192,
+                  "observed": 0.4896551724137931
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 5,
+                  "predicted": 0.6116467105410746,
+                  "observed": 0.4
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-E": {
+          "metrics": {
+            "accuracy": 0.481,
+            "balanced_accuracy": 0.35377315064983933,
+            "macro_f1": 0.3065546029068371,
+            "log_loss": 1.0129837320352244,
+            "brier_score": 0.6150616991555734,
+            "confusion_matrix": [
+              [
+                41,
+                4,
+                297
+              ],
+              [
+                21,
+                10,
+                140
+              ],
+              [
+                48,
+                9,
+                430
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.37272727272727274,
+                "recall": 0.11988304093567251,
+                "f1-score": 0.18141592920353983,
+                "support": 342.0
+              },
+              "SUBMISSION": {
+                "precision": 0.43478260869565216,
+                "recall": 0.05847953216374269,
+                "f1-score": 0.10309278350515463,
+                "support": 171.0
+              },
+              "DECISION": {
+                "precision": 0.49596309111880044,
+                "recall": 0.8829568788501027,
+                "f1-score": 0.6351550960118169,
+                "support": 487.0
+              },
+              "accuracy": 0.481,
+              "macro avg": {
+                "precision": 0.4344909908472418,
+                "recall": 0.35377315064983933,
+                "f1-score": 0.3065546029068371,
+                "support": 1000.0
+              },
+              "weighted avg": {
+                "precision": 0.4433545787345396,
+                "recall": 0.481,
+                "f1-score": 0.38899364552474686,
+                "support": 1000.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 342,
+              "SUBMISSION": 171,
+              "DECISION": 487
+            },
+            "predicted_counts": {
+              "KO_TKO": 110,
+              "SUBMISSION": 23,
+              "DECISION": 867
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.33709393395306825,
+              "actual_rate": 0.342,
+              "ece_10_bins": 0.03198616558047067,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1,
+                  "predicted": 0.08741815423732215,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 32,
+                  "predicted": 0.17117529704772835,
+                  "observed": 0.28125
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 245,
+                  "predicted": 0.25837165761307623,
+                  "observed": 0.2653061224489796
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 545,
+                  "predicted": 0.3463765478267299,
+                  "observed": 0.3706422018348624
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 154,
+                  "predicted": 0.4359215054590763,
+                  "observed": 0.35714285714285715
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 21,
+                  "predicted": 0.5285649704044906,
+                  "observed": 0.47619047619047616
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 2,
+                  "predicted": 0.6104276966700248,
+                  "observed": 0.5
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.20782649207352064,
+              "actual_rate": 0.171,
+              "ece_10_bins": 0.036826492073520636,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 36,
+                  "predicted": 0.08145391079005254,
+                  "observed": 0.05555555555555555
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 461,
+                  "predicted": 0.16086577378126535,
+                  "observed": 0.12581344902386118
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 408,
+                  "predicted": 0.23607448618742513,
+                  "observed": 0.19852941176470587
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 75,
+                  "predicted": 0.3354014372023274,
+                  "observed": 0.30666666666666664
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 16,
+                  "predicted": 0.4334910231486434,
+                  "observed": 0.375
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 3,
+                  "predicted": 0.5100826538249101,
+                  "observed": 0.3333333333333333
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 1,
+                  "predicted": 0.7954270854183834,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.45507957397341114,
+              "actual_rate": 0.487,
+              "ece_10_bins": 0.03609818719641635,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 1,
+                  "predicted": 0.11715476034429463,
+                  "observed": 1.0
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 3,
+                  "predicted": 0.2812992337508353,
+                  "observed": 0.6666666666666666
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 103,
+                  "predicted": 0.37082464052476444,
+                  "observed": 0.36893203883495146
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 735,
+                  "predicted": 0.45174100806381035,
+                  "observed": 0.49523809523809526
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 153,
+                  "predicted": 0.5280947591965114,
+                  "observed": 0.5228758169934641
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 5,
+                  "predicted": 0.6190888907593541,
+                  "observed": 0.4
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-D": {
+          "metrics": {
+            "accuracy": 0.492,
+            "balanced_accuracy": 0.3677906264634893,
+            "macro_f1": 0.3316634925447272,
+            "log_loss": 1.0081355514974046,
+            "brier_score": 0.6124688079821964,
+            "confusion_matrix": [
+              [
+                59,
+                10,
+                273
+              ],
+              [
+                27,
+                11,
+                133
+              ],
+              [
+                53,
+                12,
+                422
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.4244604316546763,
+                "recall": 0.17251461988304093,
+                "f1-score": 0.24532224532224534,
+                "support": 342.0
+              },
+              "SUBMISSION": {
+                "precision": 0.3333333333333333,
+                "recall": 0.06432748538011696,
+                "f1-score": 0.10784313725490197,
+                "support": 171.0
+              },
+              "DECISION": {
+                "precision": 0.5096618357487923,
+                "recall": 0.86652977412731,
+                "f1-score": 0.6418250950570342,
+                "support": 487.0
+              },
+              "accuracy": 0.492,
+              "macro avg": {
+                "precision": 0.4224852002456006,
+                "recall": 0.3677906264634893,
+                "f1-score": 0.3316634925447272,
+                "support": 1000.0
+              },
+              "weighted avg": {
+                "precision": 0.4503707816355611,
+                "recall": 0.492,
+                "f1-score": 0.4149102056635718,
+                "support": 1000.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 342,
+              "SUBMISSION": 171,
+              "DECISION": 487
+            },
+            "predicted_counts": {
+              "KO_TKO": 139,
+              "SUBMISSION": 33,
+              "DECISION": 828
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.3366891591882,
+              "actual_rate": 0.342,
+              "ece_10_bins": 0.02226287517481717,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1,
+                  "predicted": 0.08964218189202405,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 49,
+                  "predicted": 0.17123060978809834,
+                  "observed": 0.22448979591836735
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 252,
+                  "predicted": 0.25794882458770513,
+                  "observed": 0.2698412698412698
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 506,
+                  "predicted": 0.34828767834713775,
+                  "observed": 0.36363636363636365
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 158,
+                  "predicted": 0.43530118201352663,
+                  "observed": 0.3860759493670886
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 33,
+                  "predicted": 0.5329143359794309,
+                  "observed": 0.5454545454545454
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 1,
+                  "predicted": 0.6087882414793707,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.20918701810695153,
+              "actual_rate": 0.171,
+              "ece_10_bins": 0.043660740113957076,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 57,
+                  "predicted": 0.07917532415192623,
+                  "observed": 0.017543859649122806
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 448,
+                  "predicted": 0.15936221595472486,
+                  "observed": 0.13392857142857142
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 379,
+                  "predicted": 0.23853202458496456,
+                  "observed": 0.1820580474934037
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 91,
+                  "predicted": 0.34355097798348594,
+                  "observed": 0.37362637362637363
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 21,
+                  "predicted": 0.43659640384457776,
+                  "observed": 0.2857142857142857
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 3,
+                  "predicted": 0.5589017191816325,
+                  "observed": 0.3333333333333333
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 1,
+                  "predicted": 0.7677459300951704,
+                  "observed": 0.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.4541238227048484,
+              "actual_rate": 0.487,
+              "ece_10_bins": 0.039808087922128046,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 1,
+                  "predicted": 0.14261188801280572,
+                  "observed": 1.0
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 10,
+                  "predicted": 0.2852186372239994,
+                  "observed": 0.3
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 159,
+                  "predicted": 0.36886801555112414,
+                  "observed": 0.39622641509433965
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 627,
+                  "predicted": 0.4502454514067268,
+                  "observed": 0.49920255183413076
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 188,
+                  "predicted": 0.5338654359099464,
+                  "observed": 0.526595744680851
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 13,
+                  "predicted": 0.6361761528382363,
+                  "observed": 0.5384615384615384
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 1,
+                  "predicted": 0.7091566264609576,
+                  "observed": 1.0
+                },
+                {
+                  "lower": 0.8,
+                  "upper": 0.9,
+                  "count": 1,
+                  "predicted": 0.8289633755212416,
+                  "observed": 0.0
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-M": {
+          "metrics": {
+            "accuracy": 0.493,
+            "balanced_accuracy": 0.38927114729557183,
+            "macro_f1": 0.37469147032495614,
+            "log_loss": 1.0050144066683333,
+            "brier_score": 0.6093718307854133,
+            "confusion_matrix": [
+              [
+                74,
+                13,
+                255
+              ],
+              [
+                27,
+                24,
+                120
+              ],
+              [
+                65,
+                27,
+                395
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.4457831325301205,
+                "recall": 0.21637426900584794,
+                "f1-score": 0.29133858267716534,
+                "support": 342.0
+              },
+              "SUBMISSION": {
+                "precision": 0.375,
+                "recall": 0.14035087719298245,
+                "f1-score": 0.20425531914893616,
+                "support": 171.0
+              },
+              "DECISION": {
+                "precision": 0.512987012987013,
+                "recall": 0.811088295687885,
+                "f1-score": 0.6284805091487669,
+                "support": 487.0
+              },
+              "accuracy": 0.493,
+              "macro avg": {
+                "precision": 0.4445900485057111,
+                "recall": 0.38927114729557183,
+                "f1-score": 0.37469147032495614,
+                "support": 1000.0
+              },
+              "weighted avg": {
+                "precision": 0.46640750664997654,
+                "recall": 0.493,
+                "f1-score": 0.4406354628055081,
+                "support": 1000.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 342,
+              "SUBMISSION": 171,
+              "DECISION": 487
+            },
+            "predicted_counts": {
+              "KO_TKO": 166,
+              "SUBMISSION": 64,
+              "DECISION": 770
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.3357447124472819,
+              "actual_rate": 0.342,
+              "ece_10_bins": 0.023696771427586687,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 6,
+                  "predicted": 0.07854287406934342,
+                  "observed": 0.16666666666666666
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 68,
+                  "predicted": 0.1706192376138658,
+                  "observed": 0.20588235294117646
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 253,
+                  "predicted": 0.25672175931892754,
+                  "observed": 0.30434782608695654
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 463,
+                  "predicted": 0.34858889725420195,
+                  "observed": 0.34557235421166305
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 162,
+                  "predicted": 0.4392464705969034,
+                  "observed": 0.4012345679012346
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 43,
+                  "predicted": 0.535667853305805,
+                  "observed": 0.5116279069767442
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 5,
+                  "predicted": 0.6264873159781617,
+                  "observed": 0.6
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.21070589023698694,
+              "actual_rate": 0.171,
+              "ece_10_bins": 0.040061385431753714,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 111,
+                  "predicted": 0.0753988299873773,
+                  "observed": 0.06306306306306306
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 427,
+                  "predicted": 0.15682721406900232,
+                  "observed": 0.14754098360655737
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 305,
+                  "predicted": 0.24171143715218402,
+                  "observed": 0.16721311475409836
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 107,
+                  "predicted": 0.34205567157452327,
+                  "observed": 0.308411214953271
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 35,
+                  "predicted": 0.4443859813352993,
+                  "observed": 0.2571428571428571
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 7,
+                  "predicted": 0.5460360575166601,
+                  "observed": 0.5714285714285714
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 3,
+                  "predicted": 0.6236454246211082,
+                  "observed": 0.3333333333333333
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 5,
+                  "predicted": 0.7605512975637089,
+                  "observed": 0.6
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.4535493973157312,
+              "actual_rate": 0.487,
+              "ece_10_bins": 0.04532776946647678,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 7,
+                  "predicted": 0.16869102220406676,
+                  "observed": 0.2857142857142857
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 23,
+                  "predicted": 0.2694958408110837,
+                  "observed": 0.391304347826087
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 201,
+                  "predicted": 0.36487619274174027,
+                  "observed": 0.40298507462686567
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 512,
+                  "predicted": 0.44981735126172073,
+                  "observed": 0.498046875
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 217,
+                  "predicted": 0.537257943979046,
+                  "observed": 0.5529953917050692
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 37,
+                  "predicted": 0.6416808245422395,
+                  "observed": 0.4864864864864865
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 3,
+                  "predicted": 0.7321309610136998,
+                  "observed": 0.6666666666666666
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "majority": {
+          "metrics": {
+            "accuracy": 0.487,
+            "balanced_accuracy": 0.3333333333333333,
+            "macro_f1": 0.21833669580811477,
+            "log_loss": 18.490394188617095,
+            "brier_score": 1.026,
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                342
+              ],
+              [
+                0,
+                0,
+                171
+              ],
+              [
+                0,
+                0,
+                487
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 342.0
+              },
+              "SUBMISSION": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 171.0
+              },
+              "DECISION": {
+                "precision": 0.487,
+                "recall": 1.0,
+                "f1-score": 0.6550100874243443,
+                "support": 487.0
+              },
+              "accuracy": 0.487,
+              "macro avg": {
+                "precision": 0.16233333333333333,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.21833669580811477,
+                "support": 1000.0
+              },
+              "weighted avg": {
+                "precision": 0.237169,
+                "recall": 0.487,
+                "f1-score": 0.3189899125756557,
+                "support": 1000.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 342,
+              "SUBMISSION": 171,
+              "DECISION": 487
+            },
+            "predicted_counts": {
+              "KO_TKO": 0,
+              "SUBMISSION": 0,
+              "DECISION": 1000
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.0,
+              "actual_rate": 0.342,
+              "ece_10_bins": 0.342,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1000,
+                  "predicted": 0.0,
+                  "observed": 0.342
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.0,
+              "actual_rate": 0.171,
+              "ece_10_bins": 0.171,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1000,
+                  "predicted": 0.0,
+                  "observed": 0.171
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 1.0,
+              "actual_rate": 0.487,
+              "ece_10_bins": 0.513,
+              "bins": [
+                {
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "count": 1000,
+                  "predicted": 1.0,
+                  "observed": 0.487
+                }
+              ]
+            }
+          }
+        },
+        "training_prior": {
+          "metrics": {
+            "accuracy": 0.487,
+            "balanced_accuracy": 0.3333333333333333,
+            "macro_f1": 0.21833669580811477,
+            "log_loss": 1.0240761637723954,
+            "brier_score": 0.6191152330641614,
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                342
+              ],
+              [
+                0,
+                0,
+                171
+              ],
+              [
+                0,
+                0,
+                487
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 342.0
+              },
+              "SUBMISSION": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 171.0
+              },
+              "DECISION": {
+                "precision": 0.487,
+                "recall": 1.0,
+                "f1-score": 0.6550100874243443,
+                "support": 487.0
+              },
+              "accuracy": 0.487,
+              "macro avg": {
+                "precision": 0.16233333333333333,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.21833669580811477,
+                "support": 1000.0
+              },
+              "weighted avg": {
+                "precision": 0.237169,
+                "recall": 0.487,
+                "f1-score": 0.3189899125756557,
+                "support": 1000.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 342,
+              "SUBMISSION": 171,
+              "DECISION": 487
+            },
+            "predicted_counts": {
+              "KO_TKO": 0,
+              "SUBMISSION": 0,
+              "DECISION": 1000
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.33782150871741756,
+              "actual_rate": 0.342,
+              "ece_10_bins": 0.004178491282582463,
+              "bins": [
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 1000,
+                  "predicted": 0.33782150871741756,
+                  "observed": 0.342
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.2081822889694459,
+              "actual_rate": 0.171,
+              "ece_10_bins": 0.03718228896944589,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 1000,
+                  "predicted": 0.2081822889694459,
+                  "observed": 0.171
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.4539962023131368,
+              "actual_rate": 0.487,
+              "ece_10_bins": 0.03300379768686318,
+              "bins": [
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 1000,
+                  "predicted": 0.4539962023131368,
+                  "observed": 0.487
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "train_fights": 6793,
+      "test_fights": 1014,
+      "train_dates": [
+        "1994-03-11",
+        "2022-12-17"
+      ],
+      "test_dates": [
+        "2023-01-14",
+        "2024-12-14"
+      ],
+      "training_priors": {
+        "KO_TKO": 0.3384366259384661,
+        "SUBMISSION": 0.2027086706904166,
+        "DECISION": 0.45885470337111733
+      },
+      "models": {
+        "METHOD-A": {
+          "metrics": {
+            "accuracy": 0.5108481262327417,
+            "balanced_accuracy": 0.3581156795080988,
+            "macro_f1": 0.31468463345621056,
+            "log_loss": 1.0084117883373327,
+            "brier_score": 0.6099599568601767,
+            "confusion_matrix": [
+              [
+                49,
+                5,
+                252
+              ],
+              [
+                14,
+                5,
+                166
+              ],
+              [
+                48,
+                11,
+                464
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.44144144144144143,
+                "recall": 0.16013071895424835,
+                "f1-score": 0.23501199040767387,
+                "support": 306.0
+              },
+              "SUBMISSION": {
+                "precision": 0.23809523809523808,
+                "recall": 0.02702702702702703,
+                "f1-score": 0.04854368932038835,
+                "support": 185.0
+              },
+              "DECISION": {
+                "precision": 0.5260770975056689,
+                "recall": 0.887189292543021,
+                "f1-score": 0.6604982206405694,
+                "support": 523.0
+              },
+              "accuracy": 0.5108481262327417,
+              "macro avg": {
+                "precision": 0.4018712590141161,
+                "recall": 0.3581156795080988,
+                "f1-score": 0.31468463345621056,
+                "support": 1014.0
+              },
+              "weighted avg": {
+                "precision": 0.4479950908522336,
+                "recall": 0.5108481262327417,
+                "f1-score": 0.42044854140437654,
+                "support": 1014.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 306,
+              "SUBMISSION": 185,
+              "DECISION": 523
+            },
+            "predicted_counts": {
+              "KO_TKO": 111,
+              "SUBMISSION": 21,
+              "DECISION": 882
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.3378953913654894,
+              "actual_rate": 0.30177514792899407,
+              "ece_10_bins": 0.03756505043714974,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1,
+                  "predicted": 0.07679327328225595,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 18,
+                  "predicted": 0.17177221440382706,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 279,
+                  "predicted": 0.26295041720222406,
+                  "observed": 0.25806451612903225
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 538,
+                  "predicted": 0.346693528183153,
+                  "observed": 0.3066914498141264
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 153,
+                  "predicted": 0.4328820928362187,
+                  "observed": 0.3660130718954248
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 23,
+                  "predicted": 0.5249785258908092,
+                  "observed": 0.4782608695652174
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 2,
+                  "predicted": 0.6337414253341143,
+                  "observed": 1.0
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.20509710665300904,
+              "actual_rate": 0.18244575936883628,
+              "ece_10_bins": 0.023351238289934843,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 41,
+                  "predicted": 0.08616721564328705,
+                  "observed": 0.04878048780487805
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 520,
+                  "predicted": 0.16484751271351525,
+                  "observed": 0.15384615384615385
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 359,
+                  "predicted": 0.236092852863856,
+                  "observed": 0.2116991643454039
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 76,
+                  "predicted": 0.33853186674992547,
+                  "observed": 0.2894736842105263
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 15,
+                  "predicted": 0.43628915873821517,
+                  "observed": 0.2
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 2,
+                  "predicted": 0.5198275007389949,
+                  "observed": 0.5
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 1,
+                  "predicted": 0.6451552600786244,
+                  "observed": 1.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.45700750198150153,
+              "actual_rate": 0.5157790927021696,
+              "ece_10_bins": 0.07558754077529807,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 5,
+                  "predicted": 0.28198753523764397,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 93,
+                  "predicted": 0.37146885986689787,
+                  "observed": 0.4838709677419355
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 752,
+                  "predicted": 0.45308394389031065,
+                  "observed": 0.5292553191489362
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 163,
+                  "predicted": 0.528317478536866,
+                  "observed": 0.48466257668711654
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 1,
+                  "predicted": 0.6141905584100409,
+                  "observed": 1.0
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-E": {
+          "metrics": {
+            "accuracy": 0.5118343195266272,
+            "balanced_accuracy": 0.3590135293318288,
+            "macro_f1": 0.3158914615270922,
+            "log_loss": 1.0077277263676567,
+            "brier_score": 0.609519953469873,
+            "confusion_matrix": [
+              [
+                47,
+                5,
+                254
+              ],
+              [
+                12,
+                6,
+                167
+              ],
+              [
+                46,
+                11,
+                466
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.44761904761904764,
+                "recall": 0.15359477124183007,
+                "f1-score": 0.22871046228710462,
+                "support": 306.0
+              },
+              "SUBMISSION": {
+                "precision": 0.2727272727272727,
+                "recall": 0.032432432432432434,
+                "f1-score": 0.057971014492753624,
+                "support": 185.0
+              },
+              "DECISION": {
+                "precision": 0.5253664036076663,
+                "recall": 0.8910133843212237,
+                "f1-score": 0.6609929078014184,
+                "support": 523.0
+              },
+              "accuracy": 0.5118343195266272,
+              "macro avg": {
+                "precision": 0.4152375746513289,
+                "recall": 0.3590135293318288,
+                "f1-score": 0.3158914615270922,
+                "support": 1014.0
+              },
+              "weighted avg": {
+                "precision": 0.4558112456733565,
+                "recall": 0.5118343195266272,
+                "f1-score": 0.42052202161849633,
+                "support": 1014.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 306,
+              "SUBMISSION": 185,
+              "DECISION": 523
+            },
+            "predicted_counts": {
+              "KO_TKO": 105,
+              "SUBMISSION": 22,
+              "DECISION": 887
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.3380039234930734,
+              "actual_rate": 0.30177514792899407,
+              "ece_10_bins": 0.037657415021653165,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1,
+                  "predicted": 0.07679905095661542,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 18,
+                  "predicted": 0.17180162242242095,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 276,
+                  "predicted": 0.2625065813740482,
+                  "observed": 0.2572463768115942
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 540,
+                  "predicted": 0.3464230109156761,
+                  "observed": 0.3055555555555556
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 153,
+                  "predicted": 0.4325310818804819,
+                  "observed": 0.37254901960784315
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 24,
+                  "predicted": 0.5247321871245857,
+                  "observed": 0.4583333333333333
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 2,
+                  "predicted": 0.6378398975050378,
+                  "observed": 1.0
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.2049325540465211,
+              "actual_rate": 0.18244575936883628,
+              "ece_10_bins": 0.023190394795146313,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 41,
+                  "predicted": 0.08672787325598859,
+                  "observed": 0.07317073170731707
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 520,
+                  "predicted": 0.16483156216461858,
+                  "observed": 0.15384615384615385
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 359,
+                  "predicted": 0.23586442914463643,
+                  "observed": 0.20891364902506965
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 78,
+                  "predicted": 0.3392227013013075,
+                  "observed": 0.28205128205128205
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 13,
+                  "predicted": 0.43985982175222904,
+                  "observed": 0.23076923076923078
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 2,
+                  "predicted": 0.5186007432113737,
+                  "observed": 0.5
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 1,
+                  "predicted": 0.6432747404470113,
+                  "observed": 1.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.4570635224604055,
+              "actual_rate": 0.5157790927021696,
+              "ece_10_bins": 0.0697714766843753,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 5,
+                  "predicted": 0.28055911629931085,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 96,
+                  "predicted": 0.37295453061084594,
+                  "observed": 0.4791666666666667
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 750,
+                  "predicted": 0.45340457635974146,
+                  "observed": 0.5266666666666666
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 161,
+                  "predicted": 0.5278634267747998,
+                  "observed": 0.5031055900621118
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 2,
+                  "predicted": 0.608268637082281,
+                  "observed": 0.5
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-D": {
+          "metrics": {
+            "accuracy": 0.4960552268244576,
+            "balanced_accuracy": 0.3550901931061643,
+            "macro_f1": 0.3224482138200819,
+            "log_loss": 1.001998232767169,
+            "brier_score": 0.6063922678357478,
+            "confusion_matrix": [
+              [
+                48,
+                5,
+                253
+              ],
+              [
+                17,
+                11,
+                157
+              ],
+              [
+                67,
+                12,
+                444
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.36363636363636365,
+                "recall": 0.1568627450980392,
+                "f1-score": 0.2191780821917808,
+                "support": 306.0
+              },
+              "SUBMISSION": {
+                "precision": 0.39285714285714285,
+                "recall": 0.05945945945945946,
+                "f1-score": 0.10328638497652583,
+                "support": 185.0
+              },
+              "DECISION": {
+                "precision": 0.5199063231850117,
+                "recall": 0.8489483747609943,
+                "f1-score": 0.644880174291939,
+                "support": 523.0
+              },
+              "accuracy": 0.4960552268244576,
+              "macro avg": {
+                "precision": 0.42546660989283946,
+                "recall": 0.3550901931061643,
+                "f1-score": 0.3224482138200819,
+                "support": 1014.0
+              },
+              "weighted avg": {
+                "precision": 0.44956834884325425,
+                "recall": 0.4960552268244576,
+                "f1-score": 0.4176023723136354,
+                "support": 1014.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 306,
+              "SUBMISSION": 185,
+              "DECISION": 523
+            },
+            "predicted_counts": {
+              "KO_TKO": 132,
+              "SUBMISSION": 28,
+              "DECISION": 854
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.3391497716681277,
+              "actual_rate": 0.30177514792899407,
+              "ece_10_bins": 0.04799320327508346,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1,
+                  "predicted": 0.09504946875566994,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 26,
+                  "predicted": 0.17206739657751308,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 263,
+                  "predicted": 0.2597194015917875,
+                  "observed": 0.27756653992395436
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 532,
+                  "predicted": 0.34563889429626465,
+                  "observed": 0.30639097744360905
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 158,
+                  "predicted": 0.4366063674189622,
+                  "observed": 0.33544303797468356
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 32,
+                  "predicted": 0.5265308968321322,
+                  "observed": 0.46875
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 2,
+                  "predicted": 0.6550887783166457,
+                  "observed": 1.0
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.20241944654518018,
+              "actual_rate": 0.18244575936883628,
+              "ece_10_bins": 0.024818204220684273,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 61,
+                  "predicted": 0.08029183782206072,
+                  "observed": 0.06557377049180328
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 505,
+                  "predicted": 0.1615075597230369,
+                  "observed": 0.13663366336633664
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 348,
+                  "predicted": 0.23688073851149094,
+                  "observed": 0.2413793103448276
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 77,
+                  "predicted": 0.33763641905517544,
+                  "observed": 0.24675324675324675
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 21,
+                  "predicted": 0.44058880494121044,
+                  "observed": 0.3333333333333333
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 1,
+                  "predicted": 0.5018933700524839,
+                  "observed": 1.0
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 1,
+                  "predicted": 0.607439486468083,
+                  "observed": 1.0
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.45843078178669217,
+              "actual_rate": 0.5157790927021696,
+              "ece_10_bins": 0.05927260342106661,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 7,
+                  "predicted": 0.2763735273145231,
+                  "observed": 0.2857142857142857
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 140,
+                  "predicted": 0.3735301358706725,
+                  "observed": 0.42857142857142855
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 642,
+                  "predicted": 0.451676201982021,
+                  "observed": 0.5280373831775701
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 217,
+                  "predicted": 0.5330333688747411,
+                  "observed": 0.543778801843318
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 8,
+                  "predicted": 0.6219520375417098,
+                  "observed": 0.5
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "METHOD-M": {
+          "metrics": {
+            "accuracy": 0.5098619329388561,
+            "balanced_accuracy": 0.3881904849400069,
+            "macro_f1": 0.3780107886753879,
+            "log_loss": 0.9992851042932398,
+            "brier_score": 0.6033405655240853,
+            "confusion_matrix": [
+              [
+                68,
+                9,
+                229
+              ],
+              [
+                24,
+                24,
+                137
+              ],
+              [
+                77,
+                21,
+                425
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.40236686390532544,
+                "recall": 0.2222222222222222,
+                "f1-score": 0.2863157894736842,
+                "support": 306.0
+              },
+              "SUBMISSION": {
+                "precision": 0.4444444444444444,
+                "recall": 0.12972972972972974,
+                "f1-score": 0.200836820083682,
+                "support": 185.0
+              },
+              "DECISION": {
+                "precision": 0.5372945638432364,
+                "recall": 0.8126195028680688,
+                "f1-score": 0.6468797564687976,
+                "support": 523.0
+              },
+              "accuracy": 0.5098619329388561,
+              "macro avg": {
+                "precision": 0.4613686240643354,
+                "recall": 0.3881904849400069,
+                "f1-score": 0.3780107886753879,
+                "support": 1014.0
+              },
+              "weighted avg": {
+                "precision": 0.4796366266935546,
+                "recall": 0.5098619329388561,
+                "f1-score": 0.4566918697510944,
+                "support": 1014.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 306,
+              "SUBMISSION": 185,
+              "DECISION": 523
+            },
+            "predicted_counts": {
+              "KO_TKO": 169,
+              "SUBMISSION": 54,
+              "DECISION": 791
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.3387554001466726,
+              "actual_rate": 0.30177514792899407,
+              "ece_10_bins": 0.04399965364861434,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 4,
+                  "predicted": 0.08996358262509485,
+                  "observed": 0.0
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 52,
+                  "predicted": 0.17062538543917233,
+                  "observed": 0.17307692307692307
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 255,
+                  "predicted": 0.2567636606335093,
+                  "observed": 0.26666666666666666
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 490,
+                  "predicted": 0.34771270067390453,
+                  "observed": 0.3081632653061224
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 174,
+                  "predicted": 0.44435479662929234,
+                  "observed": 0.3218390804597701
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 34,
+                  "predicted": 0.5287999457623319,
+                  "observed": 0.5294117647058824
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 5,
+                  "predicted": 0.6229423628428827,
+                  "observed": 0.8
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.20442397542056276,
+              "actual_rate": 0.18244575936883628,
+              "ece_10_bins": 0.027297702638272393,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 90,
+                  "predicted": 0.07149893793075258,
+                  "observed": 0.1
+                },
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 499,
+                  "predicted": 0.15646100987083716,
+                  "observed": 0.13827655310621242
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 283,
+                  "predicted": 0.23905749701013237,
+                  "observed": 0.19434628975265017
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 97,
+                  "predicted": 0.3383380200443556,
+                  "observed": 0.32989690721649484
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 28,
+                  "predicted": 0.4416132212665394,
+                  "observed": 0.42857142857142855
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 12,
+                  "predicted": 0.5489049127936549,
+                  "observed": 0.4166666666666667
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 3,
+                  "predicted": 0.6227052956178238,
+                  "observed": 0.6666666666666666
+                },
+                {
+                  "lower": 0.7,
+                  "upper": 0.8,
+                  "count": 2,
+                  "predicted": 0.7423790515623735,
+                  "observed": 0.5
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.45682062443276467,
+              "actual_rate": 0.5157790927021696,
+              "ece_10_bins": 0.06485248360078227,
+              "bins": [
+                {
+                  "lower": 0.1,
+                  "upper": 0.2,
+                  "count": 4,
+                  "predicted": 0.1781357354192024,
+                  "observed": 0.25
+                },
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 28,
+                  "predicted": 0.27251929463271934,
+                  "observed": 0.4642857142857143
+                },
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 167,
+                  "predicted": 0.36311077803842523,
+                  "observed": 0.4431137724550898
+                },
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 555,
+                  "predicted": 0.45196220613859106,
+                  "observed": 0.5153153153153153
+                },
+                {
+                  "lower": 0.5,
+                  "upper": 0.6,
+                  "count": 219,
+                  "predicted": 0.536101551922772,
+                  "observed": 0.5753424657534246
+                },
+                {
+                  "lower": 0.6,
+                  "upper": 0.7,
+                  "count": 41,
+                  "predicted": 0.6338601408050812,
+                  "observed": 0.5609756097560976
+                }
+              ]
+            }
+          },
+          "orientation_max_error": 0.0
+        },
+        "majority": {
+          "metrics": {
+            "accuracy": 0.5157790927021696,
+            "balanced_accuracy": 0.3333333333333333,
+            "macro_f1": 0.22684883973107786,
+            "log_loss": 17.45309054640682,
+            "brier_score": 0.9684418145956607,
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                306
+              ],
+              [
+                0,
+                0,
+                185
+              ],
+              [
+                0,
+                0,
+                523
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 306.0
+              },
+              "SUBMISSION": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 185.0
+              },
+              "DECISION": {
+                "precision": 0.5157790927021696,
+                "recall": 1.0,
+                "f1-score": 0.6805465191932336,
+                "support": 523.0
+              },
+              "accuracy": 0.5157790927021696,
+              "macro avg": {
+                "precision": 0.17192636423405652,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.22684883973107786,
+                "support": 1014.0
+              },
+              "weighted avg": {
+                "precision": 0.26602807246867327,
+                "recall": 0.5157790927021696,
+                "f1-score": 0.3510116662111057,
+                "support": 1014.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 306,
+              "SUBMISSION": 185,
+              "DECISION": 523
+            },
+            "predicted_counts": {
+              "KO_TKO": 0,
+              "SUBMISSION": 0,
+              "DECISION": 1014
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.0,
+              "actual_rate": 0.30177514792899407,
+              "ece_10_bins": 0.30177514792899407,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1014,
+                  "predicted": 0.0,
+                  "observed": 0.30177514792899407
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.0,
+              "actual_rate": 0.18244575936883628,
+              "ece_10_bins": 0.18244575936883628,
+              "bins": [
+                {
+                  "lower": 0.0,
+                  "upper": 0.1,
+                  "count": 1014,
+                  "predicted": 0.0,
+                  "observed": 0.18244575936883628
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 1.0,
+              "actual_rate": 0.5157790927021696,
+              "ece_10_bins": 0.4842209072978304,
+              "bins": [
+                {
+                  "lower": 0.9,
+                  "upper": 1.0,
+                  "count": 1014,
+                  "predicted": 1.0,
+                  "observed": 0.5157790927021696
+                }
+              ]
+            }
+          }
+        },
+        "training_prior": {
+          "metrics": {
+            "accuracy": 0.5157790927021696,
+            "balanced_accuracy": 0.3333333333333333,
+            "macro_f1": 0.22684883973107786,
+            "log_loss": 1.0199326226028878,
+            "brier_score": 0.6146122681578675,
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                306
+              ],
+              [
+                0,
+                0,
+                185
+              ],
+              [
+                0,
+                0,
+                523
+              ]
+            ],
+            "per_class": {
+              "KO_TKO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 306.0
+              },
+              "SUBMISSION": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 185.0
+              },
+              "DECISION": {
+                "precision": 0.5157790927021696,
+                "recall": 1.0,
+                "f1-score": 0.6805465191932336,
+                "support": 523.0
+              },
+              "accuracy": 0.5157790927021696,
+              "macro avg": {
+                "precision": 0.17192636423405652,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.22684883973107786,
+                "support": 1014.0
+              },
+              "weighted avg": {
+                "precision": 0.26602807246867327,
+                "recall": 0.5157790927021696,
+                "f1-score": 0.3510116662111057,
+                "support": 1014.0
+              }
+            },
+            "actual_counts": {
+              "KO_TKO": 306,
+              "SUBMISSION": 185,
+              "DECISION": 523
+            },
+            "predicted_counts": {
+              "KO_TKO": 0,
+              "SUBMISSION": 0,
+              "DECISION": 1014
+            }
+          },
+          "calibration": {
+            "KO_TKO": {
+              "mean_probability": 0.3384366259384661,
+              "actual_rate": 0.30177514792899407,
+              "ece_10_bins": 0.036661478009472004,
+              "bins": [
+                {
+                  "lower": 0.3,
+                  "upper": 0.4,
+                  "count": 1014,
+                  "predicted": 0.3384366259384661,
+                  "observed": 0.30177514792899407
+                }
+              ]
+            },
+            "SUBMISSION": {
+              "mean_probability": 0.20270867069041654,
+              "actual_rate": 0.18244575936883628,
+              "ece_10_bins": 0.020262911321580257,
+              "bins": [
+                {
+                  "lower": 0.2,
+                  "upper": 0.3,
+                  "count": 1014,
+                  "predicted": 0.20270867069041654,
+                  "observed": 0.18244575936883628
+                }
+              ]
+            },
+            "DECISION": {
+              "mean_probability": 0.45885470337111733,
+              "actual_rate": 0.5157790927021696,
+              "ece_10_bins": 0.05692438933105226,
+              "bins": [
+                {
+                  "lower": 0.4,
+                  "upper": 0.5,
+                  "count": 1014,
+                  "predicted": 0.45885470337111733,
+                  "observed": 0.5157790927021696
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "METHOD-A": {
+      "mean": {
+        "accuracy": 0.490478447611185,
+        "balanced_accuracy": 0.35495916650653825,
+        "macro_f1": 0.3166086233111402,
+        "log_loss": 1.0143244763904156,
+        "brier_score": 0.6147268883910464
+      },
+      "sample_std": {
+        "accuracy": 0.019116355728016177,
+        "balanced_accuracy": 0.004105798630705767,
+        "macro_f1": 0.00835347126810367,
+        "log_loss": 0.010979656080979524,
+        "brier_score": 0.007733936635202481
+      },
+      "pooled": {
+        "accuracy": 0.4909654104284977,
+        "balanced_accuracy": 0.3550582685670269,
+        "macro_f1": 0.31720472474932243,
+        "log_loss": 1.0140674801508227,
+        "brier_score": 0.6145565180638751,
+        "confusion_matrix": [
+          [
+            210,
+            22,
+            1005
+          ],
+          [
+            66,
+            29,
+            593
+          ],
+          [
+            246,
+            40,
+            1663
+          ]
+        ],
+        "per_class": {
+          "KO_TKO": {
+            "precision": 0.40229885057471265,
+            "recall": 0.16976556184316896,
+            "f1-score": 0.23877202956225127,
+            "support": 1237.0
+          },
+          "SUBMISSION": {
+            "precision": 0.31868131868131866,
+            "recall": 0.04215116279069767,
+            "f1-score": 0.07445442875481387,
+            "support": 688.0
+          },
+          "DECISION": {
+            "precision": 0.509966268015946,
+            "recall": 0.8532580810672139,
+            "f1-score": 0.6383877159309022,
+            "support": 1949.0
+          },
+          "accuracy": 0.4909654104284977,
+          "macro avg": {
+            "precision": 0.41031547909065913,
+            "recall": 0.3550582685670269,
+            "f1-score": 0.31720472474932243,
+            "support": 3874.0
+          },
+          "weighted avg": {
+            "precision": 0.44161607686544796,
+            "recall": 0.4909654104284977,
+            "f1-score": 0.41063585593731156,
+            "support": 3874.0
+          }
+        },
+        "actual_counts": {
+          "KO_TKO": 1237,
+          "SUBMISSION": 688,
+          "DECISION": 1949
+        },
+        "predicted_counts": {
+          "KO_TKO": 522,
+          "SUBMISSION": 91,
+          "DECISION": 3261
+        }
+      },
+      "calibration": {
+        "KO_TKO": {
+          "mean_probability": 0.340396929045378,
+          "actual_rate": 0.3193082085699535,
+          "ece_10_bins": 0.021088720475424465,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 3,
+              "predicted": 0.08470075486050767,
+              "observed": 0.0
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 106,
+              "predicted": 0.17353566437091614,
+              "observed": 0.16981132075471697
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 956,
+              "predicted": 0.26186951379679885,
+              "observed": 0.2615062761506276
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 2094,
+              "predicted": 0.3465211918806351,
+              "observed": 0.3319006685768863
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 602,
+              "predicted": 0.43624289643065706,
+              "observed": 0.36710963455149503
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 100,
+              "predicted": 0.5334167943260313,
+              "observed": 0.48
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 13,
+              "predicted": 0.6250989509421052,
+              "observed": 0.38461538461538464
+            }
+          ]
+        },
+        "SUBMISSION": {
+          "mean_probability": 0.21220907564165614,
+          "actual_rate": 0.17759421786267424,
+          "ece_10_bins": 0.034614857778981926,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 137,
+              "predicted": 0.08294439909013855,
+              "observed": 0.06569343065693431
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 1652,
+              "predicted": 0.16248109689983706,
+              "observed": 0.1337772397094431
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 1668,
+              "predicted": 0.2356401621541365,
+              "observed": 0.20623501199040767
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 344,
+              "predicted": 0.33561554834906,
+              "observed": 0.26453488372093026
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 56,
+              "predicted": 0.4372042025887527,
+              "observed": 0.3392857142857143
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 14,
+              "predicted": 0.5182798577247645,
+              "observed": 0.21428571428571427
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 2,
+              "predicted": 0.6417421547318243,
+              "observed": 0.5
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 1,
+              "predicted": 0.7934275141393631,
+              "observed": 0.0
+            }
+          ]
+        },
+        "DECISION": {
+          "mean_probability": 0.4473939953129658,
+          "actual_rate": 0.5030975735673723,
+          "ece_10_bins": 0.06268751209895772,
+          "bins": [
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 1,
+              "predicted": 0.11887325710110626,
+              "observed": 1.0
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 22,
+              "predicted": 0.27279269236764936,
+              "observed": 0.5
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 591,
+              "predicted": 0.3698624300561772,
+              "observed": 0.43147208121827413
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 2732,
+              "predicted": 0.44947564031227805,
+              "observed": 0.5179355783308931
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 512,
+              "predicted": 0.5285810041349328,
+              "observed": 0.509765625
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 16,
+              "predicted": 0.6184003587381516,
+              "observed": 0.375
+            }
+          ]
+        }
+      },
+      "pooled_fights": 3874
+    },
+    "METHOD-E": {
+      "mean": {
+        "accuracy": 0.4894708353930949,
+        "balanced_accuracy": 0.35361733641002324,
+        "macro_f1": 0.31436566229586105,
+        "log_loss": 1.0142255551621322,
+        "brier_score": 0.6146181253632715
+      },
+      "sample_std": {
+        "accuracy": 0.01922300530443721,
+        "balanced_accuracy": 0.004619939347403215,
+        "macro_f1": 0.007926582889271908,
+        "log_loss": 0.010838807828707952,
+        "brier_score": 0.007656648152013513
+      },
+      "pooled": {
+        "accuracy": 0.4899328859060403,
+        "balanced_accuracy": 0.35366692373740866,
+        "macro_f1": 0.3150112908017971,
+        "log_loss": 1.013958616301517,
+        "brier_score": 0.6144424691926584,
+        "confusion_matrix": [
+          [
+            206,
+            24,
+            1007
+          ],
+          [
+            64,
+            28,
+            596
+          ],
+          [
+            244,
+            41,
+            1664
+          ]
+        ],
+        "per_class": {
+          "KO_TKO": {
+            "precision": 0.40077821011673154,
+            "recall": 0.16653193209377526,
+            "f1-score": 0.23529411764705882,
+            "support": 1237.0
+          },
+          "SUBMISSION": {
+            "precision": 0.3010752688172043,
+            "recall": 0.040697674418604654,
+            "f1-score": 0.07170294494238157,
+            "support": 688.0
+          },
+          "DECISION": {
+            "precision": 0.5093357820630547,
+            "recall": 0.853771164699846,
+            "f1-score": 0.6380368098159509,
+            "support": 1949.0
+          },
+          "accuracy": 0.4899328859060403,
+          "macro avg": {
+            "precision": 0.4037297536656636,
+            "recall": 0.35366692373740866,
+            "f1-score": 0.3150112908017971,
+            "support": 3874.0
+          },
+          "weighted avg": {
+            "precision": 0.43768659527659454,
+            "recall": 0.4899328859060403,
+            "f1-score": 0.4088601424834947,
+            "support": 3874.0
+          }
+        },
+        "actual_counts": {
+          "KO_TKO": 1237,
+          "SUBMISSION": 688,
+          "DECISION": 1949
+        },
+        "predicted_counts": {
+          "KO_TKO": 514,
+          "SUBMISSION": 93,
+          "DECISION": 3267
+        }
+      },
+      "calibration": {
+        "KO_TKO": {
+          "mean_probability": 0.3403514999459471,
+          "actual_rate": 0.3193082085699535,
+          "ece_10_bins": 0.022814819753918632,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 3,
+              "predicted": 0.08469683803215461,
+              "observed": 0.0
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 106,
+              "predicted": 0.17361672608104178,
+              "observed": 0.1792452830188679
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 953,
+              "predicted": 0.26145349062682965,
+              "observed": 0.2644281217208814
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 2098,
+              "predicted": 0.3464664630241182,
+              "observed": 0.3317445185891325
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 600,
+              "predicted": 0.4363754787207796,
+              "observed": 0.36
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 103,
+              "predicted": 0.5345170470469052,
+              "observed": 0.47572815533980584
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 11,
+              "predicted": 0.6301716583313115,
+              "observed": 0.45454545454545453
+            }
+          ]
+        },
+        "SUBMISSION": {
+          "mean_probability": 0.21214951740758894,
+          "actual_rate": 0.17759421786267424,
+          "ece_10_bins": 0.03455529954491467,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 136,
+              "predicted": 0.08276732742657865,
+              "observed": 0.0661764705882353
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 1674,
+              "predicted": 0.1625885606223487,
+              "observed": 0.13440860215053763
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 1654,
+              "predicted": 0.23649406984408952,
+              "observed": 0.20737605804111245
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 337,
+              "predicted": 0.3365879977113121,
+              "observed": 0.258160237388724
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 57,
+              "predicted": 0.4389361619515533,
+              "observed": 0.3508771929824561
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 13,
+              "predicted": 0.5187291946791694,
+              "observed": 0.23076923076923078
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 2,
+              "predicted": 0.6440044134253091,
+              "observed": 0.5
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 1,
+              "predicted": 0.7954270854183834,
+              "observed": 0.0
+            }
+          ]
+        },
+        "DECISION": {
+          "mean_probability": 0.447498982646464,
+          "actual_rate": 0.5030975735673723,
+          "ece_10_bins": 0.05774122756020417,
+          "bins": [
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 1,
+              "predicted": 0.11715476034429463,
+              "observed": 1.0
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 22,
+              "predicted": 0.27172783889599156,
+              "observed": 0.5
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 592,
+              "predicted": 0.36991273421941734,
+              "observed": 0.4341216216216216
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 2728,
+              "predicted": 0.4495194631492073,
+              "observed": 0.5135630498533724
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 513,
+              "predicted": 0.5284369790586677,
+              "observed": 0.530214424951267
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 18,
+              "predicted": 0.6194603983509039,
+              "observed": 0.3888888888888889
+            }
+          ]
+        }
+      },
+      "pooled_fights": 3874
+    },
+    "METHOD-D": {
+      "mean": {
+        "accuracy": 0.49037816362500625,
+        "balanced_accuracy": 0.3628096727342934,
+        "macro_f1": 0.3348656813031876,
+        "log_loss": 1.0097947967449001,
+        "brier_score": 0.6123733514356707
+      },
+      "sample_std": {
+        "accuracy": 0.017052254737782133,
+        "balanced_accuracy": 0.006122544941243581,
+        "macro_f1": 0.009947690338184321,
+        "log_loss": 0.009953051237507674,
+        "brier_score": 0.006638153209656623
+      },
+      "pooled": {
+        "accuracy": 0.4907072792978833,
+        "balanced_accuracy": 0.3629544119486761,
+        "macro_f1": 0.33549320504861385,
+        "log_loss": 1.0095104582411099,
+        "brier_score": 0.6121901968773396,
+        "confusion_matrix": [
+          [
+            241,
+            33,
+            963
+          ],
+          [
+            87,
+            45,
+            556
+          ],
+          [
+            277,
+            57,
+            1615
+          ]
+        ],
+        "per_class": {
+          "KO_TKO": {
+            "precision": 0.39834710743801655,
+            "recall": 0.1948261924009701,
+            "f1-score": 0.26167209554831705,
+            "support": 1237.0
+          },
+          "SUBMISSION": {
+            "precision": 0.3333333333333333,
+            "recall": 0.06540697674418605,
+            "f1-score": 0.10935601458080195,
+            "support": 688.0
+          },
+          "DECISION": {
+            "precision": 0.51531589023612,
+            "recall": 0.8286300667008722,
+            "f1-score": 0.6354515050167224,
+            "support": 1949.0
+          },
+          "accuracy": 0.4907072792978833,
+          "macro avg": {
+            "precision": 0.41566544366915664,
+            "recall": 0.3629544119486761,
+            "f1-score": 0.33549320504861385,
+            "support": 3874.0
+          },
+          "weighted avg": {
+            "precision": 0.4456477478844496,
+            "recall": 0.4907072792978833,
+            "f1-score": 0.42266915423398344,
+            "support": 3874.0
+          }
+        },
+        "actual_counts": {
+          "KO_TKO": 1237,
+          "SUBMISSION": 688,
+          "DECISION": 1949
+        },
+        "predicted_counts": {
+          "KO_TKO": 605,
+          "SUBMISSION": 135,
+          "DECISION": 3134
+        }
+      },
+      "calibration": {
+        "KO_TKO": {
+          "mean_probability": 0.3410103453405537,
+          "actual_rate": 0.3193082085699535,
+          "ece_10_bins": 0.028245314694941716,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 3,
+              "predicted": 0.09168318230545486,
+              "observed": 0.0
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 146,
+              "predicted": 0.17212441950617086,
+              "observed": 0.1780821917808219
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 959,
+              "predicted": 0.2588067769683519,
+              "observed": 0.2711157455683003
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 1992,
+              "predicted": 0.3474600759473844,
+              "observed": 0.3273092369477912
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 611,
+              "predicted": 0.437073607525383,
+              "observed": 0.3617021276595745
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 150,
+              "predicted": 0.5325974359896923,
+              "observed": 0.5
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 12,
+              "predicted": 0.6409089444313302,
+              "observed": 0.25
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 1,
+              "predicted": 0.7001957250098368,
+              "observed": 0.0
+            }
+          ]
+        },
+        "SUBMISSION": {
+          "mean_probability": 0.2111480728447372,
+          "actual_rate": 0.17759421786267424,
+          "ece_10_bins": 0.03355385498206297,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 208,
+              "predicted": 0.0788471489947026,
+              "observed": 0.057692307692307696
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 1657,
+              "predicted": 0.15981390951381402,
+              "observed": 0.12975256487628245
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 1545,
+              "predicted": 0.2377001976789609,
+              "observed": 0.20906148867313915
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 361,
+              "predicted": 0.3381929099739755,
+              "observed": 0.29085872576177285
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 86,
+              "predicted": 0.4393123533496881,
+              "observed": 0.3023255813953488
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 14,
+              "predicted": 0.5486717317314338,
+              "observed": 0.42857142857142855
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 2,
+              "predicted": 0.6056603341079045,
+              "observed": 0.5
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 1,
+              "predicted": 0.7677459300951704,
+              "observed": 0.0
+            }
+          ]
+        },
+        "DECISION": {
+          "mean_probability": 0.4478415818147091,
+          "actual_rate": 0.5030975735673723,
+          "ece_10_bins": 0.058928705485823914,
+          "bins": [
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 2,
+              "predicted": 0.17125499891613055,
+              "observed": 0.5
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 66,
+              "predicted": 0.2744929026615478,
+              "observed": 0.4393939393939394
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 750,
+              "predicted": 0.3698319052262109,
+              "observed": 0.43733333333333335
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 2348,
+              "predicted": 0.4494578203555034,
+              "observed": 0.5106473594548552
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 657,
+              "predicted": 0.5343736570898142,
+              "observed": 0.5570776255707762
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 45,
+              "predicted": 0.6285574027913582,
+              "observed": 0.4888888888888889
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 5,
+              "predicted": 0.7161632106335867,
+              "observed": 0.8
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 1,
+              "predicted": 0.8289633755212416,
+              "observed": 0.0
+            }
+          ]
+        }
+      },
+      "pooled_fights": 3874
+    },
+    "METHOD-M": {
+      "mean": {
+        "accuracy": 0.4932976965075037,
+        "balanced_accuracy": 0.3858931696407886,
+        "macro_f1": 0.37662890106631136,
+        "log_loss": 1.0053611716111024,
+        "brier_score": 0.6097996151379641
+      },
+      "sample_std": {
+        "accuracy": 0.01841691380489278,
+        "balanced_accuracy": 0.0036602596540032464,
+        "macro_f1": 0.004708726264525717,
+        "log_loss": 0.008042210804355148,
+        "brier_score": 0.006468230671787829
+      },
+      "pooled": {
+        "accuracy": 0.49380485286525555,
+        "balanced_accuracy": 0.3862913110931628,
+        "macro_f1": 0.37739155859466306,
+        "log_loss": 1.0051506884831611,
+        "brier_score": 0.6096038042070148,
+        "confusion_matrix": [
+          [
+            298,
+            66,
+            873
+          ],
+          [
+            93,
+            95,
+            500
+          ],
+          [
+            321,
+            108,
+            1520
+          ]
+        ],
+        "per_class": {
+          "KO_TKO": {
+            "precision": 0.41853932584269665,
+            "recall": 0.24090541632983023,
+            "f1-score": 0.30579784504874297,
+            "support": 1237.0
+          },
+          "SUBMISSION": {
+            "precision": 0.35315985130111527,
+            "recall": 0.1380813953488372,
+            "f1-score": 0.19853709508881923,
+            "support": 688.0
+          },
+          "DECISION": {
+            "precision": 0.5254061527825786,
+            "recall": 0.779887121600821,
+            "f1-score": 0.6278397356464271,
+            "support": 1949.0
+          },
+          "accuracy": 0.49380485286525555,
+          "macro avg": {
+            "precision": 0.43236844330879687,
+            "recall": 0.3862913110931628,
+            "f1-score": 0.37739155859466306,
+            "support": 3874.0
+          },
+          "weighted avg": {
+            "precision": 0.46069275052551073,
+            "recall": 0.49380485286525555,
+            "f1-score": 0.4487674497989905,
+            "support": 3874.0
+          }
+        },
+        "actual_counts": {
+          "KO_TKO": 1237,
+          "SUBMISSION": 688,
+          "DECISION": 1949
+        },
+        "predicted_counts": {
+          "KO_TKO": 712,
+          "SUBMISSION": 269,
+          "DECISION": 2893
+        }
+      },
+      "calibration": {
+        "KO_TKO": {
+          "mean_probability": 0.3404346810226292,
+          "actual_rate": 0.3193082085699535,
+          "ece_10_bins": 0.03484940227623372,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 15,
+              "predicted": 0.08223213602678948,
+              "observed": 0.13333333333333333
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 229,
+              "predicted": 0.17124383990005299,
+              "observed": 0.20087336244541484
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 958,
+              "predicted": 0.2577978742737516,
+              "observed": 0.2776617954070981
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 1830,
+              "predicted": 0.3486335276945523,
+              "observed": 0.32021857923497266
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 643,
+              "predicted": 0.44182999102252024,
+              "observed": 0.37636080870917576
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 172,
+              "predicted": 0.5344286788239273,
+              "observed": 0.5
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 24,
+              "predicted": 0.6336151472314543,
+              "observed": 0.375
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 3,
+              "predicted": 0.7335777167052658,
+              "observed": 0.0
+            }
+          ]
+        },
+        "SUBMISSION": {
+          "mean_probability": 0.21336941036013474,
+          "actual_rate": 0.17759421786267424,
+          "ece_10_bins": 0.03577519249746052,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 381,
+              "predicted": 0.07367169486249293,
+              "observed": 0.07349081364829396
+            },
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 1608,
+              "predicted": 0.15705255048263372,
+              "observed": 0.13495024875621892
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 1252,
+              "predicted": 0.23886907666875634,
+              "observed": 0.19488817891373802
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 430,
+              "predicted": 0.3400701858086389,
+              "observed": 0.2837209302325581
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 129,
+              "predicted": 0.4400505383907851,
+              "observed": 0.32558139534883723
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 45,
+              "predicted": 0.5413772766114393,
+              "observed": 0.4
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 20,
+              "predicted": 0.6354029805686914,
+              "observed": 0.6
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 8,
+              "predicted": 0.7561570149086038,
+              "observed": 0.625
+            },
+            {
+              "lower": 0.8,
+              "upper": 0.9,
+              "count": 1,
+              "predicted": 0.8036022989108563,
+              "observed": 0.0
+            }
+          ]
+        },
+        "DECISION": {
+          "mean_probability": 0.44619590861723607,
+          "actual_rate": 0.5030975735673723,
+          "ece_10_bins": 0.061882052968861616,
+          "bins": [
+            {
+              "lower": 0.1,
+              "upper": 0.2,
+              "count": 22,
+              "predicted": 0.16540068567955626,
+              "observed": 0.2727272727272727
+            },
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 153,
+              "predicted": 0.26628538864178625,
+              "observed": 0.40522875816993464
+            },
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 834,
+              "predicted": 0.3623243319155535,
+              "observed": 0.4520383693045564
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 1960,
+              "predicted": 0.4496777177324503,
+              "observed": 0.5091836734693878
+            },
+            {
+              "lower": 0.5,
+              "upper": 0.6,
+              "count": 762,
+              "predicted": 0.5367304977304247,
+              "observed": 0.5564304461942258
+            },
+            {
+              "lower": 0.6,
+              "upper": 0.7,
+              "count": 134,
+              "predicted": 0.6345089767823792,
+              "observed": 0.5746268656716418
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.8,
+              "count": 9,
+              "predicted": 0.7358676337147115,
+              "observed": 0.5555555555555556
+            }
+          ]
+        }
+      },
+      "pooled_fights": 3874
+    },
+    "majority": {
+      "mean": {
+        "accuracy": 0.5029674715335323,
+        "balanced_accuracy": 0.3333333333333333,
+        "macro_f1": 0.22305365025713075,
+        "log_loss": 17.914868179161864,
+        "brier_score": 0.9940650569329355
+      },
+      "sample_std": {
+        "accuracy": 0.017692014590251777,
+        "balanced_accuracy": 0.0,
+        "macro_f1": 0.005220218124313053,
+        "log_loss": 0.6376848416462394,
+        "brier_score": 0.03538402918050362
+      },
+      "pooled": {
+        "accuracy": 0.5030975735673723,
+        "balanced_accuracy": 0.3333333333333333,
+        "macro_f1": 0.22313813040242717,
+        "log_loss": 17.91017882654892,
+        "brier_score": 0.9938048528652556,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            1237
+          ],
+          [
+            0,
+            0,
+            688
+          ],
+          [
+            0,
+            0,
+            1949
+          ]
+        ],
+        "per_class": {
+          "KO_TKO": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1237.0
+          },
+          "SUBMISSION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 688.0
+          },
+          "DECISION": {
+            "precision": 0.5030975735673723,
+            "recall": 1.0,
+            "f1-score": 0.6694143912072815,
+            "support": 1949.0
+          },
+          "accuracy": 0.5030975735673723,
+          "macro avg": {
+            "precision": 0.1676991911891241,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.22313813040242717,
+            "support": 3874.0
+          },
+          "weighted avg": {
+            "precision": 0.25310716852937754,
+            "recall": 0.5030975735673723,
+            "f1-score": 0.33678075592746304,
+            "support": 3874.0
+          }
+        },
+        "actual_counts": {
+          "KO_TKO": 1237,
+          "SUBMISSION": 688,
+          "DECISION": 1949
+        },
+        "predicted_counts": {
+          "KO_TKO": 0,
+          "SUBMISSION": 0,
+          "DECISION": 3874
+        }
+      },
+      "calibration": {
+        "KO_TKO": {
+          "mean_probability": 0.0,
+          "actual_rate": 0.3193082085699535,
+          "ece_10_bins": 0.3193082085699535,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 3874,
+              "predicted": 0.0,
+              "observed": 0.3193082085699535
+            }
+          ]
+        },
+        "SUBMISSION": {
+          "mean_probability": 0.0,
+          "actual_rate": 0.17759421786267424,
+          "ece_10_bins": 0.17759421786267424,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.1,
+              "count": 3874,
+              "predicted": 0.0,
+              "observed": 0.17759421786267424
+            }
+          ]
+        },
+        "DECISION": {
+          "mean_probability": 1.0,
+          "actual_rate": 0.5030975735673723,
+          "ece_10_bins": 0.4969024264326277,
+          "bins": [
+            {
+              "lower": 0.9,
+              "upper": 1.0,
+              "count": 3874,
+              "predicted": 1.0,
+              "observed": 0.5030975735673723
+            }
+          ]
+        }
+      },
+      "pooled_fights": 3874
+    },
+    "training_prior": {
+      "mean": {
+        "accuracy": 0.5029674715335323,
+        "balanced_accuracy": 0.3333333333333333,
+        "macro_f1": 0.22305365025713075,
+        "log_loss": 1.024546105838334,
+        "brier_score": 0.6185079201661864
+      },
+      "sample_std": {
+        "accuracy": 0.017692014590251777,
+        "balanced_accuracy": 0.0,
+        "macro_f1": 0.005220218124313053,
+        "log_loss": 0.007972789841516252,
+        "brier_score": 0.00553614441200905
+      },
+      "pooled": {
+        "accuracy": 0.5030975735673723,
+        "balanced_accuracy": 0.3333333333333333,
+        "macro_f1": 0.22313813040242717,
+        "log_loss": 1.0243600014016494,
+        "brier_score": 0.6183821343254718,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            1237
+          ],
+          [
+            0,
+            0,
+            688
+          ],
+          [
+            0,
+            0,
+            1949
+          ]
+        ],
+        "per_class": {
+          "KO_TKO": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1237.0
+          },
+          "SUBMISSION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 688.0
+          },
+          "DECISION": {
+            "precision": 0.5030975735673723,
+            "recall": 1.0,
+            "f1-score": 0.6694143912072815,
+            "support": 1949.0
+          },
+          "accuracy": 0.5030975735673723,
+          "macro avg": {
+            "precision": 0.1676991911891241,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.22313813040242717,
+            "support": 3874.0
+          },
+          "weighted avg": {
+            "precision": 0.25310716852937754,
+            "recall": 0.5030975735673723,
+            "f1-score": 0.33678075592746304,
+            "support": 3874.0
+          }
+        },
+        "actual_counts": {
+          "KO_TKO": 1237,
+          "SUBMISSION": 688,
+          "DECISION": 1949
+        },
+        "predicted_counts": {
+          "KO_TKO": 0,
+          "SUBMISSION": 0,
+          "DECISION": 3874
+        }
+      },
+      "calibration": {
+        "KO_TKO": {
+          "mean_probability": 0.3417485640042073,
+          "actual_rate": 0.3193082085699535,
+          "ece_10_bins": 0.022440355434253767,
+          "bins": [
+            {
+              "lower": 0.3,
+              "upper": 0.4,
+              "count": 3874,
+              "predicted": 0.3417485640042073,
+              "observed": 0.3193082085699535
+            }
+          ]
+        },
+        "SUBMISSION": {
+          "mean_probability": 0.2118314671714075,
+          "actual_rate": 0.17759421786267424,
+          "ece_10_bins": 0.03423724930873326,
+          "bins": [
+            {
+              "lower": 0.2,
+              "upper": 0.3,
+              "count": 3874,
+              "predicted": 0.2118314671714075,
+              "observed": 0.17759421786267424
+            }
+          ]
+        },
+        "DECISION": {
+          "mean_probability": 0.4464199688243853,
+          "actual_rate": 0.5030975735673723,
+          "ece_10_bins": 0.056677604742987,
+          "bins": [
+            {
+              "lower": 0.4,
+              "upper": 0.5,
+              "count": 3874,
+              "predicted": 0.4464199688243853,
+              "observed": 0.5030975735673723
+            }
+          ]
+        }
+      },
+      "pooled_fights": 3874
+    }
+  },
+  "runtime_seconds": 14.033182200000738,
+  "validation": {
+    "pre2025_v2_reproduction": true,
+    "same_candidate_source_swap": true,
+    "training_only_preprocessing": true,
+    "no_train_test_id_url_overlap": true,
+    "existing_files_unchanged": true
+  },
+  "notes": [
+    "No augmentation, oversampling, class weights, tuning, calibration fitting, or model artifacts.",
+    "Multiclass lbfgs logistic uses multinomial loss with three classes.",
+    "Brier = mean sum of squared class errors (not divided by number of classes), range 0-2.",
+    "Hard majority log loss uses sklearn numerical clipping; training-prior is the useful probability baseline.",
+    "Missing differences filled with zero unknown relative advantage; scaler fitted only to training.",
+    "Current outcome selects the observed candidate only; it is not a predictor.",
+    "P(method|A wins) and P(method|B wins) are different conditional distributions, not complements.",
+    "Later reversals lack publication dates. Observed UFC history and fighter-name identity limitations persist.",
+    "2025+ counted for population verification only; excluded from all fitting, comparisons, calibration and feature reconstruction.",
+    "Pooled reliability bins are descriptive only; no calibration model fitted."
+  ]
+}

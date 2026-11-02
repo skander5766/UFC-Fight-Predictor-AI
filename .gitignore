@@ -1,0 +1,91 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Editor settings
+.vscode/
+.idea/
+
+# Data and model publication boundary
+# Local data has not been cleared for redistribution.
+/data/
+*.csv
+*.parquet
+*.feather
+
+# Default-deny artifacts, runtime metadata and empirical priors.
+# Only these aggregate evaluation reports are publication candidates.
+/models/*
+!/models/hist_gradient_boosting_metrics.json
+!/models/logistic_backtest_metrics.json
+!/models/logistic_baseline_metrics.json
+!/models/logistic_enriched_symmetric_metrics.json
+!/models/logistic_symmetric_metrics.json
+!/models/method_backtest_metrics.json
+!/models/round_backtest_metrics.json
+!/models/v2_winner_backtest_metrics.json
+
+# Trained binary artifacts, including copies outside models/.
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.keras
+*.pt
+*.pth
+*.onnx
+
+# Build and test artifacts
+build/
+dist/
+*.egg-info/
+.coverage
+.coverage.*
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+tmp/
+temp/
+
+# Local secrets and operating system files
+.env
+.env.*
+!.env.example
+.streamlit/*
+!.streamlit/config.toml
+**/secrets.toml
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+credentials-*.json
+token.json
+token.pickle
+client_secret*.json
+service-account*.json
+service_account*.json
+.aws/
+.azure/
+.gcloud/
+*.log
+.DS_Store
+Thumbs.db
